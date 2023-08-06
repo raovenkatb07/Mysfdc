@@ -15,5 +15,10 @@
             <lightning:input label="email" aura:id="email"></lightning:input>
             <lightning:input label="mobile" aura:id="mobile"></lightning:input>
         </lightning:accordionSection>
+        <lightning:accordionSection label="Industry" name="Industry"  >
+        <lightning:input label="phone" aura:id="phone"></lightning:input>
+            <lightning:input label="email" aura:id="email"></lightning:input>
+            <lightning:input label="mobile" aura:id="mobile"></lightning:input>
+        </lightning:accordionSection>
     </lightning:accordion>
 </aura:component>
