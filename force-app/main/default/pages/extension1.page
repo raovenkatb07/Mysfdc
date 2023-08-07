@@ -1,0 +1,15 @@
+<apex:page standardController="Contact" extensions="extension1" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+        <apex:commandButton value="Delete" action="{!deletecontact}" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!cc}" var="x">
+        <apex:column value="{!x.lastname}" />
+            <apex:column value="{!x.firstname}" />
+            <apex:column value="{!x.phone}" />
+            <apex:column value="{!x.fax}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

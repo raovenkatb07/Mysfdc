@@ -1,0 +1,15 @@
+<apex:page controller="Soql5" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!op}" var="x">
+        <apex:column value="{!x.name}" />
+            <apex:column value="{!x.stagename}"/>
+            <apex:column value="{!x.closedate}" />
+        </apex:pageBlockTable>
+        <apex:pageBlockButtons >
+        <apex:commandButton value="Static " action="{!staticwhere}" />
+            <apex:commandButton value="Dynamic" action="{!dynamicwhere}" />
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

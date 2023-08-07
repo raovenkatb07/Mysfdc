@@ -1,0 +1,18 @@
+<apex:page controller="ActionSupport" setup="true"  showHeader="false">
+    <apex:form id="fm">
+    <apex:pageBlock id="pb">
+        <apex:pageBlockSection >
+        <apex:inputText label="Scarch Account" value="{!accName}"  >
+            <apex:actionSupport event="onclick" action="{!Scarch}" reRender="fm" />
+            </apex:inputText>
+          <apex:commandButton value="Click" action="{!accdetails}" />
+        </apex:pageBlockSection>
+        <apex:pageBlockTable value="{!accList}" var="x">
+        <apex:column value="{!x.Name}" />
+            <apex:column value="{!x.Type}" />
+            <apex:column value="{!x.rating}" />
+            <apex:column value="{!x.Industry}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

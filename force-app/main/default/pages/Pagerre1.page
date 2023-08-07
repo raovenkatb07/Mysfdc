@@ -1,0 +1,16 @@
+<apex:page controller="Pageref1">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:pageBlockSection >
+            <apex:commandButton value="callme" action="{!submit}" />
+            <apex:commandButton value="next" action="{!Show}" />
+            <apex:commandButton value="Next Page" action="{!callme}" />
+            <apex:commandButton value="invoke" action="{!invoke}" />
+            </apex:pageBlockSection>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:outputText value="OUT PUT" ></apex:outputText>
+        <apex:outputText value="{!name}" ></apex:outputText>
+    </apex:form>
+</apex:page>

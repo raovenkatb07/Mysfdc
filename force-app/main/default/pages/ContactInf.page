@@ -1,0 +1,28 @@
+<apex:page controller="leadtesting">
+    <apex:form >
+        <apex:pageBlock title="Contact Information">
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="LastName"></apex:outputText>
+                    <apex:inputText value="{!lastname}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Lastname"></apex:outputText>
+                    <apex:inputText value="{!firstname}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Email"></apex:outputText>
+                    <apex:inputText value="{!email}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Fax"></apex:outputText>
+                    <apex:inputText value="{!fax}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Phone"></apex:outputText>
+                    <apex:inputText value="{!phone}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

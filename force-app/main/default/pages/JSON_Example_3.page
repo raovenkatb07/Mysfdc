@@ -1,0 +1,5 @@
+<apex:page controller="JSON_Example_3" >
+    <apex:form >
+    {!jsonstring}
+    </apex:form>
+</apex:page>

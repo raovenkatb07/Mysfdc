@@ -1,0 +1,8 @@
+<apex:page controller="Studentex" >
+    <apex:form >    Nmae:{!name}<br/><br/><br/>
+    Branch:{!branch}<br/><br/>
+    City:{!city}<br/><br/><br/>
+    <apex:commandButton value="Submit" action="{!call}" />
+        </apex:form>
+
+</apex:page>

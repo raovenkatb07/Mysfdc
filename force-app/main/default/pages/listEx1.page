@@ -1,0 +1,30 @@
+<apex:page controller="LstEx1" showHeader="false" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Enter the Account Name"></apex:outputText>
+                    <apex:inputText value="{!name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Entet the Account Industry"></apex:outputText>
+                    <apex:inputText value="{!ind}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Enter the phone "></apex:outputText>
+                    <apex:inputText value="{!phone}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit" action="{!call}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock> 
+        <apex:pageBlock title="Data" tabStyle="Account" >
+            <apex:pageBlockTable value="{!ac}" var="x" >
+                <apex:column value="{!x.name}" />
+                <apex:column value="{!x.Industry}"/>
+                <apex:column value="{!x.Phone}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

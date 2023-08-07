@@ -1,0 +1,16 @@
+<apex:page controller="JSON_Example_1">
+    <apex:form >
+        INTEGER :::{!integervalue}<br/><br/><br/>
+        DECIMAL :::{!decimalvalue}<br/><br/><br/>
+        ACCOUNT :::{!accountvalue}<br/><br/><br/>
+        STUDENT :::{!studentvalue}<br/><br/><br/>
+        --------------PRETTY VALUES-------------------------------------<br/><br/><br/><br/><br/><br/>
+        INTEGR  ::{!integerpretty}<br/><br/><br/>
+        DECIMAL ::{!decimalpretty}<br/><br/><br/>
+        ACCOUNT ::{!accountpretty}<br/><br/><br/>
+        STUDENT ::{!studentpretty}<br/><br/><br/>
+        
+        without supress::{!contacatvalue}<br/><br/><br/>
+        with suppress::{!contactnull}
+    </apex:form>
+</apex:page>

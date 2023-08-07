@@ -1,0 +1,14 @@
+<apex:page controller="VfToLight" action="{!invoke}" lightningStylesheets="true">
+    <apex:slds />
+    <apex:sectionHeader title="Contact" subtitle="Contact Data information" description=" All Contacts-Details" />
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!cons}" var="x" >
+        <apex:column value="{!x.lastname}" />
+            <apex:column value="{!x.firstname}" />
+            <apex:column value="{!x.email}" />
+            <apex:column value="{!x.phone}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

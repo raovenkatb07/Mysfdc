@@ -1,0 +1,5 @@
+<apex:page controller="XML_Example_2" >
+    <apex:form >
+    {!result}
+    </apex:form>
+</apex:page>

@@ -1,0 +1,62 @@
+<apex:page lightningStylesheets="true" controller="VideoPage" setup="false" showHeader="false">
+    <apex:form >
+ <apex:slds />
+    <apex:sectionHeader title="All Software video" subtitle="Software video"  />
+     <center>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+          	&nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        	&nbsp; &nbsp; &nbsp; &nbsp;<apex:commandButton value="Home" action="{!homepage}" />
+            <apex:commandButton value="About"/><apex:commandButton value="Contact" /> 
+        </center>
+    <style>
+        .abc {
+        font-size: 120%;
+        color: red;
+        background-color: lightblue;
+        color: red;
+        padding: 10px;
+        }
+        .div {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid blue;
+        margin: 0;
+        }
+    </style>
+ 	<apex:pageBlock >
+        <h1 >
+           <marquee>Free Online Software Video </marquee>
+        </h1>
+        <h1>
+            <b>Workfolow Rules </b><br/>
+            <b>Duration:45Min</b><br/>
+            <b>Workfolow Rules– Streamtape</b>
+        </h1><br/>
+     
+        <br/>
+        <center>
+        <a href="https://streamtape.to/v/OV1eQqYwbkcZO7X/2.mp4" >
+                        <img src="{!$Resource.Admin}" width="25%" />
+                    </a>  <br/> 
+        <a href="https://streamtape.to/v/OV1eQqYwbkcZO7X/2.mp4" >Watch the Video</a> </center>
+        </apex:pageBlock>
+        
+    </apex:form>
+    <center>
+         <b><u>
+                 Workfolow Rules– Streamtape </u></b>
+        <a href="https://streamtape.to/v/OV1eQqYwbkcZO7X/2.mp4" >Watch the Video</a>  </center><br/><br/><br/><br/><br/><br/><br/>
+</apex:page>

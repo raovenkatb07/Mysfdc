@@ -1,0 +1,15 @@
+<!-- Dynamicpagere ex-->
+<apex:page controller="Dynamicpagere" >
+    <apex:form >
+    <apex:commandButton value="save" action="{!page1}" />
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+            <apex:inputField value="{!aa.name}" />
+            <apex:inputField value="{!aa.phone}" />
+            <apex:inputField value="{!aa.industry}" />
+            <apex:inputField value="{!aa.fax}" />
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

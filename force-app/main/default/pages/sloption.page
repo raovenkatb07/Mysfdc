@@ -1,0 +1,15 @@
+<apex:page controller="pinsert" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+      <apex:outputText value="Enter the Select option" ></apex:outputText>
+            <apex:selectList size="1" value="{!scource}">
+                 <apex:selectOptions value="{!ops}"></apex:selectOptions>
+             </apex:selectList>
+        </apex:pageBlockSection>
+        <apex:commandButton value="submit " action="{!sops}" />
+  <br/>
+        <apex:outputText value="{!scource}"></apex:outputText>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page controller="ActionFunction" >
+    <script>
+    window.onload=function ()
+    {
+        CallApexMethods('My name is venkatarao');
+        }
+    </script>
+    <apex:outputText id="one" value="{!name}" ></apex:outputText>
+    <apex:form >
+    <apex:actionFunction action="{!calmethod}" name="CallApexMethods" reRender="one" >
+        <apex:param name="Message" value="" assignTo="{!name}" />
+        </apex:actionFunction>
+    </apex:form>
+</apex:page>

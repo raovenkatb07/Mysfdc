@@ -1,0 +1,26 @@
+<!--input value from  VF page and calculation the in apex class -->
+<apex:page controller="calculation">
+    <apex:form >
+        <apex:commandButton value="ADD" action="{!add}" reRender="pb"  />
+        <apex:commandButton value="Sub" action="{!sub}" reRender="pb" />
+        <apex:commandButton value="Mul" action="{!mul}" reRender="pb" />
+        <apex:commandButton value="Remend" action="{!mod}" reRender="pb" />
+        <apex:commandButton value="Divid" action="{!div}" reRender="pb" />
+        <apex:pageBlock title="calculation" id="pb">
+            <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputText value="Enter A Value"></apex:outputText>
+                <apex:inputText value="{!aval}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Enter B val"></apex:outputText>
+                    <apex:inputText value="{!bval}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="RESULT"></apex:outputText>
+                    <apex:outputtext value="{!cval}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

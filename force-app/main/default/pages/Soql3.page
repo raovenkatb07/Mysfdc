@@ -1,0 +1,20 @@
+<apex:page controller="Soql3" showHeader="false">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+        <apex:commandButton value="setlimit" action="{!setlimit}" />
+            <apex:commandButton value="setoffset" action="{!setoffset}" />
+            <apex:commandButton value="limitoffset" action="{!limitoffset}" />
+            <apex:commandButton value="sortASC" action="{!sortASC}" />
+            <apex:commandButton value="sortDesc" action="{!sortDesc}" />
+            <apex:commandButton value="featchallrows" action="{!featchallrows}" />
+        </apex:pageBlockButtons> 
+          <apex:pageBlockTable value="{!a}" var="x" >
+            <apex:column value="{!x.name}" />
+            <apex:column value="{!x.phone}" />
+            <apex:column value="{!x.industry}" />
+            <apex:column value="{!x.fax}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

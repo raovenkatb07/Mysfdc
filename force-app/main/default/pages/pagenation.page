@@ -1,0 +1,19 @@
+<apex:page controller="pagenation">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="previous" action="{!setcon.previous}" />
+            <apex:commandButton value="First" action="{!setcon.First}" />
+            <apex:commandButton value="next" action="{!setcon.next}" />
+            <apex:commandButton value="last" action="{!setcon.last}" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!op}" var="x">
+    	<apex:column value="{!x.name}"/>
+            <apex:column value="{!x.stagename}" />
+            <apex:column value="{!x.amount}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        {!setcon.pageNumber * setcon.pagesize} 
+    </apex:form>
+</apex:page>

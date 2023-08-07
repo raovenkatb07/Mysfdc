@@ -1,0 +1,24 @@
+<apex:page >
+    <style>
+        .box{
+        margin-left:50px;
+        margin-top:50px;
+        width:200px;
+        height:250px;
+        border:1px solid red;
+        }
+    </style>
+    <apex:includeLightning />
+    <div id="one" class="box">
+        
+    </div>
+    <script>
+    $Lightning.use("c:Out_com_1App",function(){
+        $Lightning.createComponent("c.Out_com_1",{
+            empName:"venkatarao",
+            age:25,
+            city:"hyd"
+        },"one",function(component){});
+    });
+ </script>
+</apex:page>

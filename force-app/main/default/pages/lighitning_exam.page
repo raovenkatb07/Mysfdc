@@ -1,0 +1,11 @@
+<apex:page showHeader="false">
+    <apex:includeLightning />
+    <div id="one">
+        
+    </div>
+    <script>
+    $Lightning.user("c:out_app_2",function(){
+        $Lightning.createComponent("c:out_com_2",{},"one",function(component){});
+    	});
+    </script>
+</apex:page>

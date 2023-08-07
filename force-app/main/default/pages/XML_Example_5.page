@@ -1,0 +1,5 @@
+<apex:page controller="XML_Example_5" >
+    <apex:form >
+    <apex:outputLabel value="{!result}"></apex:outputLabel>
+    </apex:form>
+</apex:page>

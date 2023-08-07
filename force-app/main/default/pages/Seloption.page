@@ -1,0 +1,13 @@
+<apex:page controller="Seloption" showHeader="false" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        <apex:selectList size="1" value="{!seleted}" >
+            <apex:selectOptions value="{!options}"></apex:selectOptions>
+            </apex:selectList>
+        </apex:pageBlockSection>
+        <apex:commandButton value="Submit" reRender="one" />
+        </apex:pageBlock> 
+        <apex:outputLabel value="{!seleted}" id="one"></apex:outputLabel>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<apex:page controller="soql8">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!op}" var="x">
+        <apex:column value="{!x.name}" />
+            <apex:column value="{!x.stagename}" />
+            <apex:column value="{!x.closedate}" />
+            <apex:column value="{!x.accountid}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

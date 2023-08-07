@@ -1,0 +1,23 @@
+<!--Example2: Display standard fields and buttons of Lead in custom VF Page using controller
+-->
+<apex:page controller="leadcvf" >
+    <apex:form >
+    <apex:commandButton value="Save" action="{!create}" />
+        <apex:commandButton value="Refesh" action="{!refresh}" />
+        <apex:commandButton value="save&New" action="{!savenew}" />
+        <apex:pageBlock title="LEAD">
+        	<apex:pageBlockSection columns="3">
+            <apex:inputField value="{!mylead.lastname}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+            <apex:inputField value="{!mylead.firstname}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+            <apex:inputField value="{!mylead.company}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+            <apex:inputField value="{!mylead.status}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

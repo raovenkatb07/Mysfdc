@@ -1,0 +1,11 @@
+<apex:page controller="JSON_Example_2" >
+    <apex:form >
+        AGE::{!age}<br/><br/><br/><br/>
+        Account::{!acc.name}===={!acc.phone}===={!acc.industry}<br/><br/>
+        STUDENT::{!std.name}===={!std.phone}<br/><br/>
+        New STUDENT::{!newstd.name}::{!newstd.phone}<br/><br/><br/>
+        <apex:repeat value="{!resmap}" var="x">
+        {!x}====={!resmap[x]}
+        </apex:repeat>
+    </apex:form>
+</apex:page>

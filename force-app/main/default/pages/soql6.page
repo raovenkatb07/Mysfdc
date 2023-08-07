@@ -1,0 +1,24 @@
+<apex:page controller="soql6" >
+    <apex:form >
+        <apex:pageBlock >
+                <apex:pageBlockSection >
+        <apex:outputText value="Enter name"></apex:outputText>
+        <apex:inputText value="{!accname}" />
+            <apex:outputText value="Enter your industry "></apex:outputText>
+            <apex:inputText value="{!accind}" />
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    <apex:pageBlock >
+         <apex:pageBlockTable value="{!ac}" var="x" >
+        <apex:column value="{!x.name}" />
+            <apex:column value="{!x.phone}"/>
+            <apex:column value="{!x.industry}" />
+            <apex:column value="{!x.fax}"/>
+        </apex:pageBlockTable>
+        <apex:pageBlockButtons >
+        <apex:commandButton value="Single" action="{!single}" />
+            <apex:commandButton value="multiple" action="{!multiple}" />
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

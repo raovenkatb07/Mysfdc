@@ -1,0 +1,24 @@
+<apex:page controller="Message1" showHeader="false">
+    <apex:form >
+        <apex:pageMessages ></apex:pageMessages>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Enter the Name"></apex:outputText>
+                    <apex:inputText value="{!name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Enter Salary"></apex:outputText>
+                    <apex:inputText value="{!Salary}" />
+                </apex:pageBlockSectionItem>
+                <apex:commandButton value="Save" action="{!mes}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="OUT PUT VALUES">
+            <apex:outputText value="Name" ></apex:outputText>
+            <apex:outputText value="{!name}"></apex:outputText><br/>
+            <apex:outputText value="Salary"></apex:outputText>
+            <apex:outputText value="{!Salary}"></apex:outputText>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

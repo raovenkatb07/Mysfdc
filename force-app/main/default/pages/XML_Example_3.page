@@ -1,0 +1,7 @@
+<apex:page controller="XML_Example_3" >
+    <apex:form >
+    <apex:inputText value="{!Scarchtest}" />
+        <apex:commandButton value="Submit" action="{!invoke}" reRender="one" />
+        <apex:outputText value="{!result}" id="one"></apex:outputText>
+    </apex:form>
+</apex:page>

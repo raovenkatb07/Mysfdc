@@ -1,0 +1,11 @@
+<!--Example 4: calling a method from a method within single class
+-->
+<apex:page controller="Method1" >
+    <apex:form >
+    <apex:commandButton value="Method1" action="{!m1}" /><br/><br/>
+        <apex:outputText value="{!aval}"></apex:outputText><br/><br/><br/>
+        <apex:outputText value="{!bval}"></apex:outputText><br/><br/>
+        <apex:outputText value="{!cval}"></apex:outputText><br/><br/>
+        <apex:outputText value="{!dval}"></apex:outputText>
+    </apex:form>
+</apex:page>

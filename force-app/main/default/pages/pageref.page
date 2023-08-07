@@ -1,0 +1,7 @@
+<!-- Pagereference  ex1-->
+<apex:page controller="pageref">
+    <apex:form >
+    <apex:commandButton value="face book" action="{!p}" />
+
+    </apex:form>
+</apex:page>

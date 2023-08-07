@@ -1,0 +1,17 @@
+<apex:page controller="soql7" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+        <apex:commandButton value="staticIn" action="{!staticIn}" />
+            <apex:commandButton value="SoqlIn" action="{!SoqlIn}" />
+            <apex:commandButton value="DynamicIN" action="{!DynamicIN}" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!ac}" var="x">
+        <apex:column value="{!x.name}" />
+            <apex:column value="{!x.phone}" />
+            <apex:column value="{!x.industry}" />
+            <apex:column value="{!x.fax}" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

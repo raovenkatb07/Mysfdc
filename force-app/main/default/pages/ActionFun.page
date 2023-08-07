@@ -1,0 +1,20 @@
+<apex:page controller="ActionSupport" showHeader="false">
+    <apex:form id="fm" >
+    <script>
+        function Scarchacc(){
+            gosever();
+            }
+        </script>
+        <apex:actionFunction name="gosever" action="{!Scarch}" reRender="fm" />
+        <apex:pageBlock title="My Account Records">
+            <apex:inputText label="Scarch Account" value="{!accList}" onchange="Scarchacc()" />
+            <apex:pageBlockTable value="{!accList}" var="x">
+            <apex:column value="{!x.Name}" />
+                <apex:column value="{!x.Phone}" />
+                <apex:column value="{!x.Type}" />
+                <apex:column value="{!x.Industry}" />
+            </apex:pageBlockTable>
+           
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

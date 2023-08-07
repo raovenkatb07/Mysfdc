@@ -1,0 +1,144 @@
+<apex:page lightningStylesheets="true" cache="true" tabStyle="Account" controller="VideoPage" setup="false" showHeader="false" >
+    <apex:slds />
+    <apex:form >
+   
+        <apex:sectionHeader title="All Software video" subtitle="Software video"   />
+        
+        <center>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+          &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        	&nbsp; &nbsp; &nbsp; &nbsp;
+            <apex:commandButton value="About"/><apex:commandButton value="Contact" /> 
+        </center>
+        
+        
+        
+    </apex:form>
+    <style>
+        .abc {
+        font-size: 120%;
+        color: red;
+        background-color: lightblue;
+        color: red;
+        padding: 10px;
+        }
+        
+         .xyz {
+        font-size: 120%;
+        color: red;
+        background-color: Violet;
+        color: gray;
+        padding: 10px;
+        }
+        
+        .div {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid blue;
+        margin: 0;
+        }
+    </style>
+    
+    
+    <apex:pageBlock >
+    <apex:tabPanel title="HOme" styleClass="abc" >
+        
+        <apex:tab name="Home"  label="Home"    >
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="4" title="Latest Video">
+                    <apex:pageBlockSectionItem >
+                      <a href="https://streamtape.to/v/jAjQXP1lxbSLg4/1_St_Class_Salesforce_Environments.mp4" >
+                        <img src="{!$Resource.SalesforceEnvironments}" width="98%"  />
+                    </a> 
+                 <a href="https://streamtape.to/v/jAjQXP1lxbSLg4/1_St_Class_Salesforce_Environments.mp4" >1StClass Salesforce Environments.mp4</a>
+                </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                    <a href="https://streamtape.to/v/LJeeV4XbpWHRwb8/2ndcls_Documents_Obj.mp4" >
+                        <img src="{!$Resource.documents}" width="51%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/LJeeV4XbpWHRwb8/2ndcls_Documents_Obj.mp4" >2nd Class documents.mp4</a>
+                </apex:pageBlockSectionItem>
+                           <apex:pageBlockSectionItem >
+                <a href="https://streamtape.to/v/LV9VPXxB7XT4qD/3rdcls_Objects.mp4" >
+                        <img src="{!$Resource.Object}" width="99%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/LV9VPXxB7XT4qD/3rdcls_Objects.mp4" >3rd Class Object.mp4</a> 
+                </apex:pageBlockSectionItem>
+                             <apex:pageBlockSectionItem >
+                <a href="https://streamtape.to/v/yPYRKOJRG6f1ljk/4hcls_Tabs.mp4" >
+                        <img src="{!$Resource.Tabs}" width="85%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/yPYRKOJRG6f1ljk/4hcls_Tabs.mp4" >3rd Class Object.mp4</a> 
+                </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+            </apex:pageBlock>
+            
+        </apex:tab>  
+        
+        <apex:tab label="Salesforces" labelWidth="10"     >
+      	<apex:tabPanel styleClass="xyz">
+            <apex:tab name="Admin" label="Admin" >
+             	<apex:pageBlockSection columns="4">
+                    <apex:pageBlockSectionItem >
+            	 <a href="https://streamtape.to/v/jAjQXP1lxbSLg4/1_St_Class_Salesforce_Environments.mp4" >
+                        <img src="{!$Resource.SalesforceEnvironments}" width="94%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/jAjQXP1lxbSLg4/1_St_Class_Salesforce_Environments.mp4" >1StClass Salesforce Environments.mp4</a> 
+        </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                <a href="https://streamtape.to/v/LJeeV4XbpWHRwb8/2ndcls_Documents_Obj.mp4" >
+                        <img src="{!$Resource.documents}" width="49%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/LJeeV4XbpWHRwb8/2ndcls_Documents_Obj.mp4" >2nd Class documents.mp4</a> 
+                </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                <a href="https://streamtape.to/v/LV9VPXxB7XT4qD/3rdcls_Objects.mp4" >
+                        <img src="{!$Resource.Object}" width="99%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/LV9VPXxB7XT4qD/3rdcls_Objects.mp4" >3rd Class Object.mp4</a> 
+                </apex:pageBlockSectionItem>
+                          <apex:pageBlockSectionItem >
+                <a href="https://streamtape.to/v/yPYRKOJRG6f1ljk/4hcls_Tabs.mp4" >
+                        <img src="{!$Resource.Tabs}" width="85%"  />
+                    </a>  <br/> 
+                    <a href="https://streamtape.to/v/yPYRKOJRG6f1ljk/4hcls_Tabs.mp4" >4th Class Tabs.mp4</a> 
+                </apex:pageBlockSectionItem>
+          </apex:pageBlockSection>
+            </apex:tab>
+            <apex:tab name="Dev" label="Dev"></apex:tab>
+            <apex:tab name="Lighting" label="Lighting"></apex:tab>
+            <apex:tab name="LWC" label="LWC"></apex:tab>
+            <apex:tab label="Integration"></apex:tab>
+          
+            </apex:tabPanel>
+        </apex:tab>
+        <apex:tab label="JAVA" >
+          
+        <apex:tabPanel styleClass="xyz">
+            <apex:tab label="Core Java"></apex:tab>
+              <apex:tab label="ADV Java"></apex:tab>
+           
+            </apex:tabPanel>
+              
+        </apex:tab>  
+    </apex:tabPanel> 
+    <apex:tabPanel >
+        
+    </apex:tabPanel>
+    
+    </apex:pageBlock> 
+    
+</apex:page>

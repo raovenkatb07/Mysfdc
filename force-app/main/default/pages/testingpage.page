@@ -1,0 +1,81 @@
+<apex:page controller="leadtesting" showHeader="false">
+    <apex:form >
+        <apex:pageBlock title="LEAD">
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="lastname"></apex:outputText>
+                    <apex:inputText value="{!mylead.lastname}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="FirstName"></apex:outputText>
+                    <apex:inputText value="{!mylead.firstName}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Company"></apex:outputText>
+                    <apex:inputText value="{!mylead.company}"  />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Phone"></apex:outputText>
+                    <apex:inputText value="{!mylead.phone}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Email"></apex:outputText>
+                    <apex:inputText value="{!mylead.email}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="lead Status"></apex:outputText>
+                    <apex:inputText value="{!mylead.status}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Rating"></apex:outputText>
+                    <apex:inputText value="{!mylead.rating}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="AnnualRevenue"></apex:outputText>
+                    <apex:inputText value="{!mylead.AnnualRevenue}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="lead Score"></apex:outputText>
+                    <apex:inputText value="{!mylead.leadScore__c}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!inserlead}" />
+                <apex:commandButton value="Reference" action="{!refresh}" />
+                <apex:commandButton value="Sava & Reference" action="{!insAndRef}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <br/><marquee>LEAD INFORMATION</marquee>
+        <apex:pageBlock title="LEAD INFORMATIONS">
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.firstname}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.firstname}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.Company}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.phone}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.status}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.rating}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.AnnualRevenue}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!mylead.email}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!inserlead}" />
+                <apex:commandButton value="Reference" action="{!refresh}" />
+                <apex:commandButton value="Inser ANd Reference" action="{!insAndRef}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,65 @@
+<apex:page showHeader="false" >
+    <apex:sectionHeader title="Account Edit" subtitle="New Account" help="www.salesforce.com" description="This is Account page information " printUrl="www.facebook.com" />
+    <apex:form >
+        <apex:pageBlock tabStyle="lead">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save"  />
+                <apex:commandButton value="Cancel" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="First" collapsible="false" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Name"></apex:outputText>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Rating"></apex:outputText> 
+                    <apex:selectList size="1">
+                        <apex:selectOption itemLabel="-NONE-" itemValue="-None-"></apex:selectOption>
+                        <apex:selectOption itemValue="Hot" itemLabel="Hot"></apex:selectOption>
+                        <apex:selectOption itemValue="Cold" itemLabel="Cold"></apex:selectOption>
+                        <apex:selectOption itemValue="Warm" itemLabel="Warm"></apex:selectOption>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Shipping Street"></apex:outputText>
+                    <apex:inputTextarea />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Description"></apex:outputText>
+                    <apex:inputTextarea rows="5" cols="50" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Second">
+            <apex:pageBlockSectionItem >
+                <apex:outputText value="Gender" ></apex:outputText>
+                <apex:selectRadio >
+                <apex:selectOption itemValue="Male"  itemLabel="Male"></apex:selectOption>
+                <apex:selectOption itemValue="Female" itemLabel="Female"></apex:selectOption>
+                </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Password"></apex:outputText>
+                    <apex:inputSecret />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="File"></apex:outputText>
+                    <apex:inputFile value=""></apex:inputFile>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Condition"></apex:outputText>
+                    <apex:inputCheckbox />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="3rd">
+            <apex:pageBlockSectionItem >
+                <apex:outputText value="Type"></apex:outputText>
+                <apex:inputHidden />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                <apex:outputText value="Fax"></apex:outputText>
+               <apex:outputText ></apex:outputText>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

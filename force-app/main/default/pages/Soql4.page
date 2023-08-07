@@ -1,0 +1,11 @@
+<apex:page controller="Soql4" >
+    <apex:form >
+    <apex:pageBlock >
+ <apex:pageBlockTable value="{!op}" var="x" >
+        <apex:column value="{!x.name}"/>
+     <apex:column value="{!x.stagename}"/>
+     <apex:column value="{!x.closedate}"/>
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

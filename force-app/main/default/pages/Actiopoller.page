@@ -1,0 +1,9 @@
+<apex:page controller="Actiopoller" >
+    <apex:form >
+    <apex:pageBlock id="one">
+        <apex:actionPoller action="{!datetimemethod}" reRender="one" interval="5" />
+        OUT is TIME::{!dt}
+        Refrence 5 min<br/> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

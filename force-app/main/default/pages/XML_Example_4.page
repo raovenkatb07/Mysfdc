@@ -1,0 +1,13 @@
+<apex:page controller="XML_Example_4" showHeader="false">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:panelGrid columns="3">
+        <apex:inputTextarea rows="10" cols="50" value="{!xmlstring}" />
+            <apex:panelGrid columns="1"><br/><br/><br/><br/>
+                <apex:commandButton value="Add" action="{!convert}" />
+                </apex:panelGrid>
+            <apex:inputTextarea rows="10" cols="50" value="{!result}" />
+        </apex:panelGrid>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

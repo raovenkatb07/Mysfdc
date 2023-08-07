@@ -1,0 +1,8 @@
+<apex:page controller="JSON_Example_6" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:inputTextarea rows="5" cols="250" value="{!jsonstring}" />
+        <apex:commandButton value="submit" action="{!gettoken}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

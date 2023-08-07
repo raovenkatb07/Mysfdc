@@ -1,0 +1,58 @@
+<apex:page showHeader="false" controller="Page1" >
+    <apex:form >
+        <apex:pageMessages ></apex:pageMessages>
+        <apex:pageBlock title="Page Information" >
+            <apex:pageBlockSection columns="1" title="SECTION 1" >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Name"></apex:outputText>
+                    <apex:inputText value="{!na}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Phone"></apex:outputText>
+                    <apex:inputText value="{!ph}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" title="SECTION 2" collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="LastNmae"></apex:outputText>
+                    <apex:inputText value="{!ln}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Company"></apex:outputText>
+                    <apex:inputText value="{!comy}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="email"></apex:outputText>
+                    <apex:inputText value="{!em}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="SUBMIT" action="{!call}"  />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Name"></apex:outputText>
+                    <apex:outputText value="{!name}"></apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="LastName"></apex:outputText>
+                    <apex:outputText value="{!lastname}"></apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Phone"></apex:outputText>
+                    <apex:outputText value="{!phone}"></apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Email"></apex:outputText>
+                    <apex:outputText value="{!email}"></apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Company"></apex:outputText>
+                    <apex:outputText value="{!company}"></apex:outputText>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

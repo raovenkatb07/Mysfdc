@@ -1,0 +1,11 @@
+<apex:page controller="JSON_Example_5" action="{!gettoken}" >
+    <apex:form >
+    <apex:pageBlock title="JSON">
+        {!jsonstring}<br/><br/><br/><br/>
+        <apex:pageBlockTable value="{!resmap}" var="x">
+        <apex:column value="{!x}" headerValue="text" />
+            <apex:column value="{!resmap}" headerValue="token" />
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,14 @@
+<!--Example 5: Display Error and success message in VF page -->
+
+<apex:page controller="messages">
+    <apex:form >
+        <apex:commandButton value="Submit" action="{!cal}" /><br/><br/><br/>
+    <apex:messages />
+        <apex:outputText value="Enter Exp"></apex:outputText>
+        <apex:inputText value="{!exp}" /><br/><br/><br/><br/>
+        <apex:outputText value="Salary:::"></apex:outputText>
+        <apex:outputText value="{!sal}"></apex:outputText><br/><br/>
+        <apex:outputText value="Bouns:::"></apex:outputText>
+        <apex:outputText value="{!bouns}"></apex:outputText>
+    </apex:form>
+</apex:page>
