@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>imperativeDemo4</componentName>
+                <identifier>c_imperativeDemo4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>imperativeDemo2</componentName>
+                <identifier>c_imperativeDemo2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>imperativeDemo</componentName>
+                <identifier>c_imperativeDemo</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>imperativeDemo3</componentName>
+                <identifier>c_imperativeDemo3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region2</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Imperative With Records</masterLabel>
+    <template>
+        <name>flexipage:appHomeTemplateHeaderTwoColumns</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>
