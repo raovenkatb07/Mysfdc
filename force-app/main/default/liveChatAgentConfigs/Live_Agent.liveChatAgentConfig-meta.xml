@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+            <profile>standardaul</profile>
+            <profile>analytics cloud integration user</profile>
+            <profile>analytics cloud security user</profile>
+            <profile>cross org data proxy user</profile>
+            <profile>custom: marketing profile</profile>
+            <profile>custom: sales profile</profile>
+            <profile>custom: support profile</profile>
+            <profile>force.com - app subscription user</profile>
+            <profile>force.com - free user</profile>
+            <profile>identity user</profile>
+            <profile>minimum access - salesforce</profile>
+            <profile>standard</profile>
+            <profile>solutionmanager</profile>
+            <profile>marketingprofile</profile>
+            <profile>contractmanager</profile>
+            <profile>partner app subscription user</profile>
+            <profile>read only</profile>
+            <profile>salesforce api only system integrations</profile>
+            <profile>work.com only user</profile>
+            <profile>aaa</profile>
+        </profiles>
+        <users>
+            <user>raosfdc@sfdc.com</user>
+        </users>
+    </assignments>
+    <customAgentName>Rao</customAgentName>
+    <disableTransferConferenceGreeting>false</disableTransferConferenceGreeting>
+    <enableAgentFileTransfer>false</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>false</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>true</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Live Agent</label>
+    <supervisorDefaultAgentStatusFilter>Online</supervisorDefaultAgentStatusFilter>
+    <supervisorSkills>
+        <skill>English</skill>
+        <skill>Hindhi</skill>
+    </supervisorSkills>
+    <transferableButtons>
+        <button>Live_Agent_Chat_with_Omni_channel</button>
+    </transferableButtons>
+    <transferableSkills>
+        <skill>English</skill>
+        <skill>Hindhi</skill>
+    </transferableSkills>
+</LiveChatAgentConfig>
