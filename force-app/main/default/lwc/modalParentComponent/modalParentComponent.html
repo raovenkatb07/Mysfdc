@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Sample event " icon-name="custom:custo12">
+        <div class="slds-m-around_medium">
+             <button class="slds-button slds-button_success" onclick={showheader}>Opean Model</button>
+             <template if:true={showModal}>
+             <c-modal-child-component header-text="Message!!"
+             body-text="This is modal is a child Coponent.Trigger from Parent and click of the clsoed 
+             buttom it will be dispatch an event to parent Handler" 
+             onclose={modalclosedhandler}
+             ></c-modal-child-component>
+            </template>
+        </div>
+    </lightning-card>
+</template>

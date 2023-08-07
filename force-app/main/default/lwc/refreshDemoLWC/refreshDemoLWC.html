@@ -1,0 +1,14 @@
+<template>
+  <lightning-card icon-name="custom:custom41" title="Reference the Contact's Reocrds">
+   <!--{iscontact}--> 
+    <template if:true={contact.data}>
+    <lightning-datatable 
+        key-field="Id"
+        data={contact.data}
+        columns={columns}
+         onsave={handleSave}
+        draft-values={draftValues}
+    ></lightning-datatable>
+    </template>
+  </lightning-card>  
+</template>

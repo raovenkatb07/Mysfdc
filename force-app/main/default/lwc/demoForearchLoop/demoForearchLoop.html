@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="DisPlay the Cytes"  icon-name="custom:custom1" >
+        <ul class="slds-m-around_medium">
+        <template for:each={citys} for:item="cc">
+            <p key={cc}  class="list-group-item list-group-item-action" >{cc}</p>
+            </template>
+        </ul>
+    </lightning-card>
+    <lightning-card title="Dispaly Emp data" icon-name="custom:custom12" >
+        <ul class="slds-m-around-_medium">
+            <template for:each={Emp} for:item="e">
+                <p key={e.id}    class="list-group-item list-group-item-action">{e.id}--{e.name}</p>
+            </template>
+        </ul>
+    </lightning-card> 
+    
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card icon-name="custom:custom12"  title="Iteration-program">
+        <template iterator:cname={conlist}>
+            <div key={cname.value.id} >
+                <a href="" ><strong>{cname.value.name}</strong></a>:::&nbsp;
+          <a href=""><strong>{cname.value.company}</strong>{cname.value.comapny}</a>
+            </div>
+        </template>
+
+    </lightning-card>
+   
+</template>

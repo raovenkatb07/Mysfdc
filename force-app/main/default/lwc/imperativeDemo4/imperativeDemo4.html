@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="featch the Records Imperativelly " icon-name="custom:custom43">
+            <div class="slds-p-around_medium">
+                <lightning-button label="ClickHere" onclick={calme} ></lightning-button>
+                <template if:true={contactsData}>
+                    <template for:each={contactsData} for:item="con">
+                      <p key={con.id}>{con.Name}::: {con.Phone}</p>
+                  
+                    </template>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

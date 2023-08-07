@@ -1,0 +1,27 @@
+<template>
+    <lightning-card icon-name="custom:custom21" title="Event With Data">
+        <div class="slds-m-around_medium">
+            <h3>Select your Favourite Cricketer  in child Component and
+                 see details in parent Component</h3>
+                 <div class="flex">
+                    <p>I am Parent Component</p>
+                    <c-navbar-child-component  nav-list={navList} onselection={selecthandler} > </c-navbar-child-component>
+                <template if:true={selectedPlayes}>
+                      <div class="card">
+                            <div>
+                                <img src={selectedPlayes.imgUrl}  alt="Avatar" style="width:100%">
+                            
+                            <div class="container">
+                                <p><strong>Player Name:</strong>{selectedPlayes.name}</p>
+                                <p><strong>Ranking::</strong>{selectedPlayes.position}</p>
+                                <p><strong>Country</strong></string>{selectedPlayes.country}</p>
+                                <p><strong>Rating</strong>{selectedPlayes.rating}</p>
+                            </div>
+                            </div>
+                                
+                        </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

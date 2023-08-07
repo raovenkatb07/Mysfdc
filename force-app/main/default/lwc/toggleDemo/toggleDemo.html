@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-m-bottom_large">
+        <lightning-card title="Toggle_Demo" icon-name="custom:custom23">
+    <button class="slds-button slds-button_brand" onclick={togglehandler} >click to Toggle </button>
+    <template if:false={toggleText}>
+    <h3>lets play the Toggle Action</h3>
+</template>
+</lightning-card>
+    </div>
+</template>

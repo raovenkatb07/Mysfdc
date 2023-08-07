@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="getlistview Adapter Demo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Contact id</th>
+                </tr>
+                <tr>
+                    <th>Contact lastName</th>
+                </tr>
+                <tr>
+                    <th>Contact firstName</th>
+                </tr>
+                <tr>
+                    <th>Contact Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template if:true={conList}>
+                <template for:each={conList} for:item="item">
+                    <tr key={item.id}>
+                        <td>{item.id}</td>
+                     
+                    </tr>
+                </template>
+            </template>
+            </tbody>
+        </table>
+    </lightning-card>
+
+</template>

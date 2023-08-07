@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Conditional Rendering on an event trigger" icon-name="custom:custom43" >
+     <div class="slds-m-around_medium">
+        <lightning-input type="text" name="title" 
+        label="Enter  your Name"
+         onkeyup={changehadler} value={empname}>
+        </lightning-input>
+    </div> 
+      <template if:true={checkdata}>
+        <h3> sales-force_developer </h3>
+      </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="create the useing uiReecords " icon-name="custom:custom12">
+        <div class="slds-m-around--xx-large">
+            <lightning-input label="Enter the Account Name" name="Name" type="text" value={formFields.Name}
+            onchange={changehandler} placeholder="Account Name"></lightning-input>
+
+            <lightning-input label="Enter the  PhoneNumber " name="Phone" type="text" 
+            value={formFields.Phone} onchange={changehandler} placeholder="Phone"></lightning-input>
+
+            <lightning-input label="Enter the Industry " name="Industry" type="text" 
+            value={formFields.Industry} placeholder="Industry" onchange={changehandler} ></lightning-input>
+
+            <lightning-input label="Enter the Type" name="Type" type="text" 
+            value={formFields.Type} placeholder="Type" onchange={changehandler}></lightning-input><br/> 
+
+            <lightning-button label="Submit" onclick={handleSave} variant="brand"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

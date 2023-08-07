@@ -1,0 +1,69 @@
+<template>
+   <!-- <div class="slds-p-around_medium">
+        <lightning-card title="wire property in LWC">
+            <div class="slds-p-around_medium">
+                <template for:each={wireAccounts.data} for:item="acc">
+                    <div class="slds-item" key={acc.id}>
+                        <strong>{acc.Name}</strong>
+                        <strong>{acc.Phone}</strong>
+                        <strong>{acc.Industry}</strong>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>-->
+    <div class="slds-p-around_medium">
+        <lightning-card title="Wire Finction" icon-name="custom:custom32">
+            <div class="slds-p-around_medium">
+                <template for:each={result} for:item="acc">
+                    <div class="slds-item" key={acc.id}>
+                        <strong>{acc.Name}</strong>
+                        <strong>{acc.Phone}</strong>
+                        <strong>{acc.Industry}</strong>
+                    </div>
+                </template>
+                <div>From SObject value fetch :::<p><strong>{name}</strong></p></div>
+            </div>
+        </lightning-card>
+
+    </div>
+    <br/><br/>
+    <div class="slds-p-around_medium">
+        <lightning-card title="Fatch the Record From the Apex class" icon-name="custom:custom 32">
+            <div class="slds-p-around_medium">
+                <template for:each={WireAccountRec.data} for:item="aid">
+                    <div class="slds-item" key={aid.id}>
+                        <p><strong>{aid.Name}</strong></p>
+                        <p><strong>{aid.Phone}</strong></p>
+                        <p><strong>{aid.Industry}</strong></p>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+    <br/>
+    <div class="slds-m-aaround_medium">
+        <lightning-card title="Fetch the recrods from  Apex class with Dynamic ids" icon-name="cusom :custom43">
+            <div class="slds-p-around_medim">
+                <template for:each={wireRecords.data} for:item="aids">
+                    <div class="slds-item" key={aid.Id}>
+                        <p><strong>{aid.Name}</strong></p>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+    <div class="slds-m-around_medium">
+       <lightning-card title="fetch the records Imperativelly " icon-name="custom:custom45">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Click" onclick={handler} ></lightning-button>
+            <template if:true={contacts}>
+            <template for:each={contacts} for:item="con">
+               <p key={con.id}> Contact Name::{con.Name}</p>
+              
+            </template>
+            </template>
+        </div>
+       </lightning-card>
+    </div>
+</template>

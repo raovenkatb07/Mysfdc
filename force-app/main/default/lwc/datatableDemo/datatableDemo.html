@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="DataTable Styles" icon-name="custom:custom32">
+  
+        <template if:true={tableData}>
+            <div class="DataTable">
+            <lightning-datatable key-field="Id" data={tableData} 
+            columns={columns}
+            hide-checkbox-column
+            ></lightning-datatable>
+        </div>
+         </template>
+    
+    </lightning-card>
+</template>

@@ -1,0 +1,34 @@
+<template>
+    <lightning-card icon-name="standard:account" title="One way databinding">
+        <hr/>
+        <div class="slds-p-around-medium">
+            <h1>MY NAME IS ::{fullName}</h1>
+        </div>
+    </lightning-card><br/><br/><br/>
+    <lightning-card icon-name="custom:custom1" title="two-way databinding">
+        <hr/>
+        <div class="slds-p-around-medium">
+            <lightning-input type="text" name="fname" value={fname} label="Enter the father Name" 
+            onkeyup={change}>
+        </lightning-input>
+        </div>
+        <div class="slds-p-around-medium">
+            <p>My Father Nam is : {fname}</p>
+        </div>
+    </lightning-card>
+  <lightning-card icon-name="custom:custom1" title="With Trak in java script" >
+<div class="slds-p-around-medium">
+<lightning-input 
+    value={Mname} 
+    title="testing" 
+    name="MName" 
+    label="Enter Mother Name" 
+    onkeyup={mchange}>
+</lightning-input>
+</div>
+ <div class="slds-p-around-medium">
+        <p>My Mother  Nam is : {Mname}</p>
+    </div>
+  </lightning-card>
+
+</template>

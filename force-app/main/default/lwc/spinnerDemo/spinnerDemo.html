@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Resuble Spinner Demo" icon-name="custom:custom43">
+        <lightning-button label="Spinner" variant="brand" 
+        onclick={spinneronehandler} name="showOne"></lightning-button>
+        <p>Sample text1</p>
+        <p>Sample text2</p>
+        <p>Sample text3</p>
+        <p>Sample text4</p>
+       <template if:true={showOne}>
+        <c-Lightning-loader
+        spinner-text="Hey Iam implements to spinnner of the icons"
+        ></c-Lightning-loader>
+       </template>
+
+    </lightning-card>
+</template>
