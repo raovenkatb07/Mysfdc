@@ -1,0 +1,17 @@
+<aura:component >
+ 		<lightning:accordion activeSectionName="basicinfo">
+    	<lightning:accordionSection Name="basicInfo" label="customer Information">
+            <lightning:input label="FirstName" aura:id="fname"></lightning:input>
+            <lightning:input label="LastNmae" aura:id="lname"></lightning:input>
+            <lightning:input label="Company" aura:id="company"></lightning:input>
+            <lightning:input label="Address" aura:id="Address"></lightning:input>
+            </lightning:accordionSection>
+            <lightning:accordionSection name="Colleage Information">
+                <lightning:input label="ColleageName" aura:id="CN"></lightning:input>
+                <lightning:input label="Phone" aura:id="phone"></lightning:input>
+                <lightning:input label="email" aura:id="Email"></lightning:input>
+                <lightning:input label="Mobile" aura:id="Mobile"></lightning:input>
+             </lightning:accordionSection>
+            <lightning:avatar initials="CS" fallbackIconName="standard:account" alternativeText="Erro" />
+    </lightning:accordion>
+</aura:component>

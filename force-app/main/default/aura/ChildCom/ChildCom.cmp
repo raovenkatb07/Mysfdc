@@ -1,0 +1,4 @@
+<aura:component>
+<aura:registerEvent name="firstName" type="c:FirstEvent"></aura:registerEvent>
+<lightning:button label="Submit" onclick="{!c.show}"></lightning:button>
+</aura:component>

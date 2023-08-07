@@ -1,0 +1,10 @@
+<aura:component >
+	<aura:attribute name="EmpName" type="String"></aura:attribute>
+    <aura:attribute name="Salary" type="integer"></aura:attribute>
+    <lightning:button label="Setdata" variant="neutral" aura:id="one" onclick="{!c.show}"></lightning:button>
+	<lightning:button label="Canecl" variant="inverse" aura:id="two" onclick="{!c.invoke}"></lightning:button>
+	<div class="This">
+        EmpName:::{!v.EmpName}<br/>
+        Salary::::{!v.Salary}
+    </div>
+</aura:component>

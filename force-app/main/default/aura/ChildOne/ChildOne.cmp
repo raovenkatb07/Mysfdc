@@ -1,0 +1,4 @@
+<aura:component>
+<aura:registerEvent name="Secname" type="c:AppEvent"></aura:registerEvent>
+<lightning:button label="Submit" onclick="{!c.call}"></lightning:button>
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="val" type="String"></aura:attribute>
+	<aura:handler   event="c:SecondEvent" action="{!c.invoke}"></aura:handler>
+    <div class="box">
+    Name::{!v.val}
+    </div>
+</aura:component>

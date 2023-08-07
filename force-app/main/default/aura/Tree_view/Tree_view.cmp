@@ -1,0 +1,5 @@
+<aura:component >
+	<aura:attribute name="myData" type="object"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.call}"></aura:handler>
+    <lightning:tree items="{!v.myData}" header="Roles"></lightning:tree>
+</aura:component>

@@ -1,0 +1,17 @@
+<aura:component controller="conAPex">
+<aura:attribute name="MyList" type="Contact[]"></aura:attribute>
+<aura:handler event="c:AppEvent2" action="{!c.invoke}"></aura:handler>
+<c:ConCom1></c:ConCom1>
+<div class="box">
+    <table width="100%">
+        <tr width="100%">
+            <th>  Name</th>
+        </tr>
+    <aura:iteration items="{!v.MyList}" var="a">
+        <tr width="100%">
+            <th>{!a.Name}</th>
+        </tr>
+    </aura:iteration>
+</table>
+</div>
+</aura:component>

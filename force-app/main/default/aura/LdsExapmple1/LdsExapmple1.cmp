@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId"  >
+	<aura:attribute name="recordId" type="String"></aura:attribute>
+    <aura:attribute name="targetRec" type="Object"></aura:attribute>
+    <aura:attribute name="newAcc" type="Object"></aura:attribute>
+    <aura:attribute name="error" type="String"></aura:attribute>
+    <force:recordData aura:id="record"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      fields="Id,Name,Phone,Rating,Industry"
+                      targetRecord="{!v.targetRec}"
+                      targetFields="{!v.newAcc}"
+                      targetError="{!v.error}"
+                      mode="EDIT" 
+                      ></force:recordData>
+    <lightning:card iconName="standard:account" title="Account" >
+   	<div class="slds-p-horizontal_small">
+        <p class="slds-p-horizonal_small">
+        <lightning:input lable="Name"  value="{!v.newAcc.Name}" ></lightning:input>
+        </p>
+        <p class="slds-p-horizonal_small" >
+        <lightning:input label="Phone" value="{!v.newAcc.Phone}"></lightning:input>
+        </p>
+        <p class="slds-p-horizonal_small" >
+        <lightning:input label="Rating" value="{!v.newAcc.Rating}"></lightning:input>
+        </p>
+        <p class="slds-p-horizonal_small">
+        <lightning:input label="Industry" value="{!v.newAcc.Industry}"></lightning:input>
+        </p>
+        </div>
+    </lightning:card>
+                      
+</aura:component>

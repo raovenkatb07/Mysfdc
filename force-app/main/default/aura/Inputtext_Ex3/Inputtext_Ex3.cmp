@@ -1,0 +1,11 @@
+<aura:component >
+    <div>
+        <lightning:input label="Aval" type="number" aura:id="aval" placeholder="Enter A value"></lightning:input>
+        <lightning:input label="Bval" type="number" aura:id="bval" placeholder="Eneter B value"></lightning:input><br/>
+        <lightning:button label="+" variant="destructive" onclick="{!c.result}"></lightning:button>
+        <lightning:button label="-" variant="destructive" onclick="{!c.sub}"></lightning:button>
+        <lightning:button label="*" variant="destructive" onclick="{!c.mul}"></lightning:button>
+        <lightning:button label="/" variant="destructive" onclick="{!c.Div}"></lightning:button>
+        <lightning:button label="C"  variant="destructive" onclick="{!c.cancel}"></lightning:button>
+        <lightning:input label="ANs" type="number" aura:id="cval"></lightning:input> </div>
+</aura:component>

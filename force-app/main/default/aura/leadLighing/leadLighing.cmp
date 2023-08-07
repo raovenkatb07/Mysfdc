@@ -1,0 +1,53 @@
+<aura:component controller="leadLighing">
+    <aura:attribute name="Mylead" type="object[]"></aura:attribute>
+    <lightning:buttonGroup>
+        <lightning:button label="Submit" onclick="{!c.invoke}"></lightning:button>
+    </lightning:buttonGroup>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scopr="col">
+                   <td class="slds-truncate" title="Lead Id">Lead Id</td> 
+                </th>
+                <th scope="col">
+                <td class="slds-truncate" title="lead Name">Lead Name</td>
+                </th>
+                <th scope="col">
+                <td class="slds-truncate"  title="lead Status">Lead Status</td>
+                </th>
+                <th scope="col">
+                <td class="slds-truncate" title="lead Phone" >LEAD PHONE</td>
+                </th>
+                <th scope="col">
+                    <td class="slds-truncate" title="lead Email" >LEAD EMAIL</td>
+                </th>
+                <th scope="col">
+                <td class="slds-truncate" title="Lead Company">LEAD COMPANY</td>
+                </th>
+            </tr>
+        </thead>
+        <aura:iteration items="{!v.Mylead}" var="x">
+        <tr class="slds-hint-parent">
+            <td data-label="Lead Id" >
+            <div class="slds-truncate" title="Lead Id">{!x.Id}</div>
+            </td>
+            <td data-label="Lead Name">
+            <div class="slds-truncate" title="Lead Name" >{!x.Name} </div>
+            </td>
+            <td data-label="Lead Status"  >
+            <div class="slds-truncate" title="lead Status">{!x.Status}</div>
+            </td>
+            <td data-label="Lead Phone">
+            <div class="slds-truncate"  title="lead Phone">{!x.Phone}</div>
+            </td>
+            <td data-label="Lead Email" >
+            <div calss="slds-truncate" title="Lead Email" >{!x.Email}</div>
+            </td>
+            <td data-label="Lead Company" >
+            <div class="slds-truncate"  title="Lead Company">{!x.Company}</div>
+            </td>
+            </tr>
+    </aura:iteration>
+    </table>
+    
+</aura:component>

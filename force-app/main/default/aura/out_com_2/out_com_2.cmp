@@ -1,0 +1,6 @@
+<aura:component controller="out_app_exam" >
+	<aura:attribute name="records" type="object"></aura:attribute>
+    <aura:attribute name="columns" type="list"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.show}"></aura:handler>
+    <lightning:dataTable columns="{!v.columns}" data="{!v.records}" keyField="id"></lightning:dataTable>
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:isUrlAddressable"
+ access="global">
+ <aura:attribute type="String" name="id"></aura:attribute>
+ <aura:handler name="init" value="{!this}" action="{!c.init}"></aura:handler>
+<div class="slds-card" >
+    <div>I am coming to from LWC nagivatation State {!v.id}</div>
+</div>
+</aura:component>

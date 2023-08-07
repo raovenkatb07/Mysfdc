@@ -1,0 +1,12 @@
+<aura:component controller="AuraEx3" >
+    <aura:attribute name="intrest" type="Decimal"></aura:attribute>
+    <aura:attribute name="totalamount" type="Decimal"></aura:attribute>
+    <div class="block">
+        <lightning:input label="Enter Amount" aura:id="Amount"></lightning:input>
+        <lightning:input label="Enter Rate" aura:id="rate"></lightning:input>
+        <lightning:input label="enter Years"  aura:id="years"></lightning:input>
+        <lightning:button label="Submit" onclick="{!c.invoke}"></lightning:button>
+        <lightning:input label="intrest" placeholder="Intrest" value="{!v.intrest}" ></lightning:input>
+        <lightning:input label="Total-Amount" placeholder="Total-Amount" value="{!v.totalamount}" ></lightning:input>
+    </div>
+</aura:component>

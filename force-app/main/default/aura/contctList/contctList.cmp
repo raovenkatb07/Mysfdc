@@ -1,0 +1,51 @@
+<aura:component controller="Contlightning" >
+    <aura:attribute name="mycontacts" type="contact[]"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action ="{!c.call}"></aura:handler>
+    
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer" >
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="ID" >id</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="FirstName" >FirstName</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="LastName" >  LastName</div>
+                </th>
+                <th>
+                    <div class="slds-truncate" title="Phone">Phone</div>
+                </th>
+                <th>
+                    <div class="slds-truncate" title="Email">Email</div>
+                </th>
+            </tr>
+        </thead>
+   
+    <tbody>
+        <aura:iteration items="{!v.mycontacts}" var="x">
+            <tr class="slds-hint-parent">
+                
+                <td data-label="Contact ID">
+                    <div class="slds-truncate" title="Contact Id">{!x.Id}</div>
+                </td> 
+                <td data-label="Contact lastName">
+                <div class="slds-truncate" title="Contact LastName">{!x.LastName}</div>
+                </td>
+                 
+                <td data-label="Contact FirstName" >
+                <div class="slds-truncate" title="{!x.FirstName}">{!x.FirstName}</div>
+                </td>
+                <td  data-label="Contact Phone">
+                <div class="slds-truncate" title="Phone">{!x.Phone}</div>
+                </td>
+                <td  data-label="Contact Email">
+                <div class="slds-truncate" title="Emamil">{!x.Email}</div>
+                </td>
+            </tr>
+        </aura:iteration>
+    </tbody>
+     </table>
+    
+</aura:component>

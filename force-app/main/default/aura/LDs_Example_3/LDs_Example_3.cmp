@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="String"></aura:attribute>
+    <aura:attribute name="targetRec" type="Object"></aura:attribute>
+    <aura:attribute name="accRec" type="Object"></aura:attribute>
+    <aura:attribute name="error" type="String"></aura:attribute>
+    <force:recordData aura:id="record"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      fields="Id,Name,Phone,Industry,Rating"
+                      targetRecord="{!v.targetRec}"
+                      targetFields="{!v.accRec}"
+                      targetError="{!v.error}"
+                      mode="EDIT"
+                      ></force:recordData>
+    <lightning:card iconName="standard:account" title="{!v.accRec.Name}" >
+        <div class="slds-p-horizontal_small">
+            <p class="slds-p-horizontal_small">
+                <lightning:input label="Name" value="{!v.accRec.Name}"></lightning:input>
+            </p>
+            <p class="slds-p-horizontal_small">
+                <lightning:input label="Phone" value="{!v.accRec.Phone}"></lightning:input>
+            </p>
+            <p class="slds-p-horizontal_small">
+                <lightning:input label="Industry" value="{!v.accRec.Industry}"></lightning:input>
+            </p>
+            <p class="slds-p-horizontal_small">
+                <lightning:input label="Rating" value="{!v.accRec.Rating}"></lightning:input>
+            </p>
+        </div>
+        <div class="slds-p-horizontal_small" >
+            <p class="slds-p-horizontal_small">
+                <lightning:button label="Save" onclick="{!c.invoke}"></lightning:button>
+            </p>
+        </div>
+    </lightning:card>
+</aura:component>

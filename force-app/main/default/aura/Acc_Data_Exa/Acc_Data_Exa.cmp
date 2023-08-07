@@ -1,0 +1,55 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"  controller="Acc_data" access="global" >
+    <aura:attribute name="myAccounts" type="Account[]"></aura:attribute>
+    <aura:attribute name="accrec"  type="String" ></aura:attribute>
+    <aura:attribute name="accId" type="String"></aura:attribute>
+    <aura:attribute name="AccFields" type="String"></aura:attribute>
+    <aura:attribute name="AccError" type="String"></aura:attribute>
+    <aura:attribute name="Tarec" type="string"></aura:attribute>
+    <!-- <aura:handler name="init" value="{!this}" action="{!c.call}"></aura:handler>-->
+    
+    <force:recordData aura:id="accReId"
+                      layoutType="FULL"
+                      recordId="{!v.accId}"
+                      targetFields="{!v.AccFields}"
+                      targetrecord="{!v.Tarec}"
+                      targetError="{!v.AccError}"
+                      ></force:recordData>
+    <h1><p> <lightning:input label="Scarch Industry" aura:id="accInd" type="text" ></lightning:input></p></h1>
+    <lightning:button label="Submit" onclick="{!c.submit}"></lightning:button>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example default base table of Opportunities">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="AccountName" >NAME</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Account Phone">PHONE</div>
+                </th>
+                <th scope="col" >
+                    <div class="slds-truncate" title="Industry" >INDUSTRY</div>
+                </th>
+                <th scpoe="col">
+                    <div class="slds-truncate" titlte="Rating"> RATING</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.myAccounts}" var="x">
+                <tr>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="Account Name" >{!x.Name}</div>
+                    </td>
+                    <td data-label="Account Phone">
+                        <div class="slds-truncate" title="Account Phone">{!x.Phone}</div>
+                    </td>
+                    <td data-label="account Industry">
+                        <div class="slds-truncate" title="Account Industry" >{!x.Industry}</div>
+                    </td>
+                    <td data-label="Account Rating" >
+                    <div class="slds-truncate" title="Account Rating" >{!x.Rating}</div>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>            
+</aura:component>

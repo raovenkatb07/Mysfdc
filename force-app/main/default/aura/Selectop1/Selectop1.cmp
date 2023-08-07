@@ -1,0 +1,39 @@
+<aura:component controller="Selectopt_1" >
+    <aura:attribute name="options" type="String[]"  default="['hyd','ban','che','kal']" ></aura:attribute>
+    <aura:attribute name="states" type="String[]"></aura:attribute>
+    <aura:attribute name="cource" type="String[]"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.callme}"></aura:handler>
+    <ui:inputSelect class="single" aura:id="InputSelectSingle">
+        <ui:inputSelectOption text="ANy" ></ui:inputSelectOption>
+        <ui:inputSelectOption text="one"></ui:inputSelectOption>
+        <ui:inputSelectOption text="two"></ui:inputSelectOption>
+        <ui:inputSelectOption text="three"></ui:inputSelectOption>
+        <ui:inputSelectOption text="four"></ui:inputSelectOption>
+    </ui:inputSelect>
+    <br/><br/><br/><br/><br/>
+    <lightning:select  name="Select 1" label="how many tickets">
+        <option value="" >Chose ANy One</option>
+        <option value="1">one </option>
+        <option value="2" >two</option>
+    </lightning:select>
+    <br/><br/><br/><br/><br/>
+    <lightning:select name="Select your City" label="Selct Your City" >
+        <aura:iteration items="{!v.options}" var="x">
+            <option value="{!x}">{!x}</option>
+        </aura:iteration>
+    </lightning:select>
+    <br/><br/><br/><br/><br/>
+    <lightning:select name="Slect States" label="Select States">
+        <aura:iteration items="{!v.states}" var="x" >
+            <option value="{!x}" >{!x}</option>
+        </aura:iteration>
+    </lightning:select>
+    
+    <br/><br/><br/><br/><br/>
+    <lightning:select name="Select your Cource" label="Seelct Your Cource">
+        <aura:iteration items="{!v.cource}" var="x">
+            <option value="{!x}" >{!x}</option>
+        </aura:iteration>
+    </lightning:select>
+    
+</aura:component>

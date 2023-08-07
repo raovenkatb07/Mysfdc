@@ -1,0 +1,19 @@
+<aura:component >
+	<lightning:tabset>
+        <lightning:tab label="Account">
+            This is the Account INFORMATION<br/>
+            Account <br/>
+            Account of he venkatarao <br/>
+        </lightning:tab>
+        <lightning:tab label="Conact">
+        Contact is information <b/>
+            contat<br/>
+            Contact person
+        </lightning:tab>
+        <lightning:tab label="opportunity">
+        Opportunity <br/>
+            opprtunity <br/>
+            information the recorsdds
+            </lightning:tab>
+     </lightning:tabset>
+</aura:component>

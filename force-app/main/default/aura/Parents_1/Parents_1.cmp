@@ -1,0 +1,6 @@
+<aura:component >
+    <div class="box" >
+	<c:Childs_1></c:Childs_1>
+    <c:Childs_2></c:Childs_2>
+        </div>
+</aura:component>

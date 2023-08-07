@@ -1,0 +1,11 @@
+<aura:component >
+	<div>
+        Name :Vemkatarao<br/>
+        City:Venkatareddy Palli<br/>
+        FatherName:pullaiag<br/>
+        MotherName:venkatalakshami
+    
+    </div><br/>
+    <c:Child_1></c:Child_1><br/>
+    <c:Child_2></c:Child_2>
+</aura:component>

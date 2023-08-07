@@ -1,0 +1,13 @@
+<aura:component implements="force:lightningQuickAction" >
+    <lightning:card title="Global Action">
+        <lightning:input label="firstName" aura:id="Fname"></lightning:input>
+        <lightning:input label="lastName" aura:id="Lname"></lightning:input>
+        <lightning:input label="Name" aura:id="Name"></lightning:input>
+        <div class="slds-p-horizontal_small">
+            <p class="slds-p-horizontal_small">
+                <lightning:button label="save" onclick="{!c.call}"></lightning:button>
+            </p>
+        </div>
+    </lightning:card>
+  
+</aura:component>

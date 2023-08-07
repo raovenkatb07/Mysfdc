@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="StudentName" type="String" ></aura:attribute>
+    <aura:attribute name="age" type="integer"></aura:attribute>
+    <aura:attribute name="colName" type="String"></aura:attribute>
+    <aura:attribute name="fee" type="double" default="5000"></aura:attribute>
+    Display  the Student Information<br/>
+    Student Name::{!v.StudentName}<br/>
+    Age::{!v.age}<br/>
+    ColName::{!v.colName}<br/>
+    Fee:::{!v.fee}
+</aura:component>

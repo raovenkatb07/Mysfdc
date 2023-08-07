@@ -1,0 +1,9 @@
+<aura:component >
+	<lightning:input label="lastName" aura:id="lName" plceholder="Enter the LastName" ></lightning:input>
+    <lightning:input label="firstName" aura:id="fName" placeholder="Enter the FirstName"></lightning:input>
+    <lightning:input label="Active" type="checkbox"></lightning:input>
+    <lightning:input label="DOB" type="date" placeholder="Enter the Date of Birth Day" ></lightning:input>
+    <lightning:input label="Gender" type="radio"></lightning:input>
+    <lightning:input label="Scarch Records" type="scarch" placeholder="Scarch the Accounts Records"></lightning:input>
+	<lightning:input label="Scarch Records" type="label-hiden" ></lightning:input>
+</aura:component>

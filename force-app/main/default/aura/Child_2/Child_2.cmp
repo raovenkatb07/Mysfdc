@@ -1,0 +1,9 @@
+<aura:component >
+    <div>
+        CHILD DATA INFORMATIONS<br/>
+        falulaty:Satish<br/>
+    cources:salesforces<br/> 
+    mode:class room /online<br/>
+    </div>
+
+</aura:component>

@@ -1,0 +1,46 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<!-- force:hasRecordId::This will ensure that we are passing id in the url
+	flexipage:availableForRecordHome:: if we want this component to be add detail page of any record ,then
+										we have implements this interface 
+		-->
+      <!--
+ 	 	forceRecordData:This Component will refere data/record who id is passed from hasRecordId
+		recordId:This will reffer to the Id of the record witch is passed in the url
+		layoutType:This will specify which fields you want to reffer from  the record 
+				   :possible values are FULL(All fields are on Detail pagelayout)
+				   :COMPACT:Fields on compact
+		fields:This will specify name  of the  fields witch you want to query from the given Id
+				NOTE ::we can use either layoutType of the field,Suggested is fields.  
+		targetRecord:The record witch was fetched base on recordId and fields is stored to targetRecord		
+		targetFeilds:simplified version of targetrecord
+		mode :this will Specifyin witch  mode we want to dispaly the record 
+			 :possible values are VIEW or EDIT
+			 :default is view
+-->
+    	<aura:attribute name="recordId" type="String"></aura:attribute>
+    	<aura:attribute name="targetRec" type="Object"></aura:attribute>
+    	<aura:attribute name="accRecord" type="Object"></aura:attribute>
+    	<aura:attribute name="error" type="String"></aura:attribute>
+    <force:recordData aura:id="record"
+                      recordId="{!v.recordId}"
+                      layoutType="FULL"
+                      fields="Id,Name,Phone,Industry"
+                      targetRecord="{!v.targetRec}"
+                      targetFields="{!v.accRecord}"
+                      targetError="{!v.error}"
+                      ></force:recordData>
+    <lightning:card iconName="standard:account" title="{!v.accRecord.Name}">
+ 	<div class="slds-p-horizontal_small">
+        <p class="slds-p-horizontal_small">
+        Name::<lightning:formattedText value="{!v.accRecord.Name}"></lightning:formattedText>
+        </p>
+        <p class="slds-p-horizontal_small">
+       	Phone::<lightning:formattedPhone value="{!v.accRecord.Phone}"></lightning:formattedPhone>
+        </p>
+        <p class="slds-p-horizontal-small">
+        Industry::<lightning:formattedText value="{!v.accRecord.Industry}"></lightning:formattedText>
+        </p>
+        </div>
+    </lightning:card>
+  
+</aura:component>

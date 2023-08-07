@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,lightning:actionOverride,force:hasRecordId" access="global" controller="Acc_insert_1" >
+    <lightning:card iconName="standard:account" title="NEW Account">
+        <aura:set attribute="actions" >
+            <lightning:buttonGroup>
+                <lightning:button label="Save" onclick="{!c.Mysave}"></lightning:button>
+                <lightning:button label="Cancel" onclick="{!c.mycancel}"></lightning:button>
+             </lightning:buttonGroup>
+        </aura:set>
+        <lightning:input label="Account Name" aura:id="name"></lightning:input>
+        <lightning:input label="Account Phone" aura:id="phone"></lightning:input>
+        <lightning:input label="Account Rating" aura:id="rating"></lightning:input>
+        <lightning:input label="Account Industry" aura:id="industry"></lightning:input>
+    </lightning:card>
+</aura:component>

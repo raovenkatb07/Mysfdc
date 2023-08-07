@@ -1,0 +1,13 @@
+<aura:component >
+	<aura:attribute name="empname" type="String"></aura:attribute>
+	<aura:attribute name="salary" type="Decimal"></aura:attribute>
+    <aura:attribute name="exp" type="Decimal"></aura:attribute>
+   	<aura:attribute name="bouns" type="Decimal"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.show}"></aura:handler>
+    <div>
+        EmpName:{!v.empname}<br/>
+        Salary  :{!v.salary}<br/>
+        Exp:     {!v.exp}<br/>
+       	Bouns  :{!v.bouns}
+    </div>
+</aura:component>

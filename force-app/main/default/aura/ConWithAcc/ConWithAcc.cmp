@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="NewCon" type="Object"></aura:attribute>
+    <aura:attribute name="FCon" type="Object"></aura:attribute>
+    <aura:attribute name="RError" type="String"></aura:attribute>
+    <aura:attribute name="recordId" type="String"></aura:attribute>
+ 	 <aura:handler name="init" value="{!this}" action="{!c.doinit}"></aura:handler> 
+    <force:recordData aura:id="conid" 
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetRecord="{!v.NewCon}"
+                      targetFields="{!v.FCon}"
+                      targetError="{!v.RError}"> 
+    </force:recordData>
+    <div class="Create Contact">
+        <lightning:card iconName="action:new_contact" title="Create Contact">
+            <div class="slds-p-horizontal_small" >
+                <lightning:input aura:id="fName" label="FirstName"  value="{!v.FCon.FirstName}"></lightning:input>
+                <lightning:input aura:id="lName" label="LastName" value="{!v.FCon.LastName}"></lightning:input>
+                <lightning:input aura:id="Title" label="Title" value="{!v.FCon.Title}"></lightning:input><br/>
+                <lightning:button label="Submit" onclick="{!c.invoke}"></lightning:button>
+            </div>
+        </lightning:card>
+    </div>
+</aura:component>

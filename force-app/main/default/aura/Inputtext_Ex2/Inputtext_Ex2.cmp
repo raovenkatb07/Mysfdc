@@ -1,0 +1,8 @@
+<aura:component >
+    <div>
+        <lightning:input label="firstName" aura:id="fname" placeholder="Enter FirstName" ></lightning:input>
+        <lightning:input label="lastName" aura:id="lname" placeholder="Enter the LAstName"></lightning:input><br></br>
+        <lightning:button label="submit" onclick="{!c.call}" variant="destructive"></lightning:button><br></br>
+        <lightning:input label="Name" aura:id="name" placeholder="Concate the firstName and lastName"></lightning:input>
+    </div>
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:registerEvent name="three" type="c:Acc_Name"></aura:registerEvent>
+    <div class="Box">
+        <lightning:input label="Enter Name" aura:id="name" ></lightning:input>
+        <lightning:button label="Submit" onclick="{!c.Scarch}"></lightning:button>
+    </div>
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component >
+    <lightning:input label="firstName" aura:id="fName" placeholder="LASTNAME" ></lightning:input>
+    <lightning:input label="lastName" aura:id="lname" placeholder="FIRSTNAME"></lightning:input>
+    <lightning:button label="submit" onclick="{!c.dis}"></lightning:button>
+    <lightning:input label="Name" aura:id="Name" placeholder="Name"></lightning:input>
+    
+</aura:component>

@@ -1,0 +1,21 @@
+<aura:component controller="ContactList">
+	<aura:attribute name="Opp" type="Opportunity[]"></aura:attribute>
+    <aura:handler event="c:Acc_Name" action="{!c.oppcall}"></aura:handler>
+    <center>OPPORTUITY INFORMATION</center>
+    <div class="Box">
+    <table width="100%">
+    <tr  width="100%"> 
+        <th>Name</th>
+        <th>StageName</th>
+        </tr>
+       <aura:iteration items="{!v.Opp}" var="x" >
+        <tr  width="100%">
+           <th>{!x.Name}</th>
+            <th>{!x.StageName}</th>
+           </tr>
+        </aura:iteration>
+        
+    </table>
+        </div>
+	
+</aura:component>

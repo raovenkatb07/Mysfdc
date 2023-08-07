@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="ParentComponentController" access="global" >
+ 
+    <aura:attribute name="accounts" type="List" />
+    <aura:attribute name="currentPage" type="Integer" default="1" />
+    <aura:attribute name="pageSize" type="Integer" default="5" />
+    <aura:attribute name="totalPages" type="Integer" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <table class="slds-table slds-table_bordered slds-table_striped">
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Industry</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.accounts}" var="account">
+                <tr>
+                    <td>{!account.Name}</td>
+                    <td>{!account.Industry}</td>
+                    <td>{!account.Phone}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    <div class="slds-text-align_center">
+        <lightning:buttonGroup>
+            <aura:iteration items="{!v.totalPages}" var="pageNumber">
+                <lightning:button label="{!pageNumber}" onclick="{!c.changePage}" value="{!pageNumber}" class="{!v.currentPage == pageNumber ? 'slds-button_brand' : 'slds-button_outline-brand'}" />
+            </aura:iteration>
+        </lightning:buttonGroup>
+    </div>
+</aura:component>

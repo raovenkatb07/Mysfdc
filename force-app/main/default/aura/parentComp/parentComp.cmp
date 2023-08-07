@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="MyName" type="String"></aura:attribute>
+	<aura:handler name="firstcall" event="c.first" action="{!c.invoke}"></aura:handler>
+    <c:childComp></c:childComp>
+    <br/>
+    <br/>
+    Name==={!v.MyName}
+</aura:component>

@@ -1,0 +1,8 @@
+<aura:component >
+    <div>
+        Name:venkat<br/>
+        City:hyderabad<br/>
+        branch:MCA
+    </div>
+    
+</aura:component>

@@ -1,0 +1,18 @@
+<aura:component >
+	<aura:attribute name="step" type="String" ></aura:attribute>
+    <aura:attribute name="opt" type="String"></aura:attribute>
+    <lightning:progressIndicator currentStep="{!v.step}" type="path" hasError="false">
+        <lightning:progressStep label="prospecting" value="prospecting"></lightning:progressStep>
+        <lightning:progressStep label="Qualification" value="Qualification" ></lightning:progressStep>
+        <lightning:progressStep label="Closed-Won" value="Closed-Won"></lightning:progressStep>
+        <lightning:progressStep label="Closed-Lost" value="Closed-Lost"></lightning:progressStep>
+      </lightning:progressIndicator>
+    <lightning:select name="SelectOption" label="Select one " value="{!v.opt}">
+        <option value="NONE-" >-NONE-</option>
+        <option value="prospecting">prospecting</option>
+        <option value="Qualification">Qualification</option>
+        <option value="Closed-Won">Closed-Won</option>
+        <option value="Closed-Lost">Closed-Lost</option>
+      </lightning:select>
+    <lightning:button label="Click here" onclick="{!c.call}"></lightning:button>
+</aura:component>

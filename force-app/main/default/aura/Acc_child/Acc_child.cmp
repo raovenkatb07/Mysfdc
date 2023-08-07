@@ -1,0 +1,15 @@
+<aura:component >
+      <aura:registerEvent name="one" type="c:Acc_Name"/>
+    <center>ACCOUNT INFORMATION</center>
+    <div class="Box">
+        <lightning:input  aura:id="name" label="AccountName"></lightning:input>
+        <lightning:input aura:id="phone" label="AccountPhone"></lightning:input>
+   <!--     <lightning:input aura:id="Name" label="AccountwithName"></lightning:input> -->
+        <lightning:buttonGroup>
+        <lightning:button label="Submit" onclick="{!c.show}"></lightning:button>
+       <!--  <lightning:button label="Oppinf" onclick="{!c.OPP}"></lightning:button>-->
+        <lightning:button label="Cancel" onclick="{!c.Cancel}"></lightning:button>
+        </lightning:buttonGroup>
+        
+    </div>
+</aura:component>

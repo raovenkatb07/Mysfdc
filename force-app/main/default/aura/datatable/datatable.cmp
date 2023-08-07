@@ -1,0 +1,51 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="ParentComponentController" access="global" >
+    <!--
+    <aura:attribute name="acctList" type="Account[]" />
+    
+    <aura:attribute name="mycolumns" type="List" />
+    
+  
+    
+     <lightning:button variant="destructive-text" label="Destructive Text" title="Destructive action" onclick="{! c.fetchAccountsWithContacts }"/>
+    
+    <lightning:datatable
+        columns="{!v.mycolumns}"
+        data="{!v.acctList}"
+        keyField="Id"
+        hideCheckboxColumn="true"
+    />     
+-->
+    
+    <aura:attribute name="accounts" type="Account[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <table class="slds-table slds-table_bordered slds-table_striped">
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Account Phone</th>
+                <th>Account Rating</th>
+                <th>Contact Name</th>
+                <th>Contact Phone</th>
+                <th>Contact Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.accounts}" var="account">
+                <aura:iteration items="{!account.Contacts}" var="contact">
+                    <tr>
+                        <td>{!account.Name}</td>
+                        <td>{!account.Phone}</td>
+                        <td>{!account.Rating}</td>
+                        <td>{!contact.Name}</td>
+                         <td>{!contact.Phone}</td>
+                        <td>{!contact.Email}</td>
+                    </tr>
+                </aura:iteration>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+    
+    
+</aura:component>

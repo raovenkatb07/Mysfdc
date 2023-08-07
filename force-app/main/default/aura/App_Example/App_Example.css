@@ -1,0 +1,23 @@
+.THIS.Box {
+    width:1000px;
+    height:300px;
+    margin-left:50px;
+    margin-top:50px;
+    border:2px soild red;
+}
+.THIS.one{
+    padding:10px;
+    width:250px;
+    height:200;
+    border:2px solid black;
+    
+}
+
+  
+.THIS.two{
+    padding:10px;
+    width:250px;
+    height:200;
+    border:2px solid black;
+    
+}

@@ -1,0 +1,11 @@
+<aura:component >
+	<div>
+        Child 1  Data information <br/>
+    =============================<br/>
+    Name: venaktarao<br/>
+    branch: mca<br/>
+    messages :hello<br/>
+    address:ventareddy palli<br/>
+    
+    </div>
+</aura:component>

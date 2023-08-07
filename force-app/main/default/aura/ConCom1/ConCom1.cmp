@@ -1,0 +1,5 @@
+<aura:component>
+<aura:registerEvent name="ConName" type="c:AppEvent2"></aura:registerEvent>
+<lightning:input label="Enter the Name " aura:id="name"></lightning:input>
+<lightning:button label="SubMit" onclick="{!c.call}"></lightning:button>
+</aura:component>

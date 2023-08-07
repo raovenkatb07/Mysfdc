@@ -1,0 +1,16 @@
+<aura:component >
+	<aura:attribute name="EmpName" type="String"></aura:attribute>
+    <Aura:attribute name="Salary" type="Decimal"></Aura:attribute>
+    <aura:attribute name="City" type="String"></aura:attribute>
+    <aura:attribute name="Exp" type="Decimal"></aura:attribute>
+    <aura:attribute name="bouns" type="Decimal"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.invoke}"></aura:handler>
+    <div>
+        EMP-NAME==={!v.EmpName}<br/>
+        Salary====={!v.Salary}<br/>
+        CITY======={!v.City}<br/>
+        EXP======={!v.Exp}<br/>
+        Bouns====={!v.bouns}
+        
+    </div>
+</aura:component>

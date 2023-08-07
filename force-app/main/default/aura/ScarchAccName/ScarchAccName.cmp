@@ -1,0 +1,39 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="ParentComponentController" access="global" >
+  
+    <aura:attribute name="accounts" type="Account[]" />
+
+    <table class="slds-table slds-table_bordered slds-table_striped">
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Contact Name</th>
+                <th>Contact Email</th>
+                <th>Opportunity Name</th>
+                <th>Opportunity Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+                <lightning:button variant="base" label="Base" title="Base action" onclick="{!c.doInit }"/>
+
+            <aura:iteration items="{!v.accounts}" var="account">
+                <tr>
+                    <td>{!account.Name}</td>
+                    <td>
+                        <ul>
+                            <aura:iteration items="{!account.Contacts}" var="contact">
+                                <li>{!contact.Name} - {!contact.Email}</li>
+                            </aura:iteration>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <aura:iteration items="{!account.Opportunities}" var="opportunity">
+                                <li>{!opportunity.Name} - {!opportunity.Amount}</li>
+                            </aura:iteration>
+                        </ul>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

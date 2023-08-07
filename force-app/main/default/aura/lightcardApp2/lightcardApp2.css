@@ -1,0 +1,12 @@
+.THIS.Box {
+    width:1000px;
+    height:100px;
+    border:2px solid gray;
+    margin-left:10px;
+}
+.THIS.Box1 {
+    width:1000px;
+    height:250px;
+    border:2px solid gray;
+    margin-left:10px;
+}

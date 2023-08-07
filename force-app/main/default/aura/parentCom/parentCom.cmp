@@ -1,0 +1,6 @@
+<aura:component>
+<aura:attribute name="MyName" type="String"></aura:attribute>
+<aura:handler name="firstName" event="c:FirstEvent" action="{!c.invoke}"></aura:handler>
+<c:ChildCom></c:ChildCom>
+Display the My Name is:::{!v.MyName}
+</aura:component>

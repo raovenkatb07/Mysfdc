@@ -1,0 +1,22 @@
+<aura:component controller="ContactList">
+    <aura:attribute name="case" type="case[]"></aura:attribute>
+    <aura:handler event="c:Acc_Name" action="{!c.caseCall}"></aura:handler>
+    <center>CASE INFORMATION</center>
+    <div class="Box" >
+        
+    <table width="100%">
+        
+        <tr  width="100%">
+        <th>CaseNumber</th>
+            <th>Case Origin</th>
+        </tr>
+        <aura:iteration items="{!v.case}" var="x">
+        <tr>
+            <th>{!x.CaseNumber}</th> 
+            <th>{!x.Origin}</th>
+            </tr>
+        </aura:iteration>
+        </table>
+    </div>
+	
+</aura:component>

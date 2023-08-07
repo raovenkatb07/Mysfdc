@@ -1,0 +1,39 @@
+<aura:component >
+    <aura:attribute name="step" type="String"></aura:attribute>	
+    <lightning:progressIndicator  hasError="false" type="path" currentStep="{!v.step}"   >
+        <lightning:progressStep label="Basic Information" value="1"></lightning:progressStep>
+        <lightning:progressStep label="Education" value="2"></lightning:progressStep>
+        <lightning:progressStep label="Exprience" value="3"></lightning:progressStep>
+        <lightning:progressStep label="Completed" value="4"></lightning:progressStep>    
+    </lightning:progressIndicator>
+    <lightning:tabSet selectedTabId="{!v.step}" >
+        <lightning:tab label="Basic information" id="1">
+            <lightning:input label="LastName"></lightning:input>
+            <lightning:input label="FirstName"></lightning:input>
+            <lightning:input label="Phone"></lightning:input>
+            <lightning:input label="Email"></lightning:input>
+            <lightning:button label="Next" onclick="{!c.next}"></lightning:button>
+        </lightning:tab>
+        <lightning:tab label="Education" id="2">
+            <lightning:input label="Qualification"></lightning:input>
+            <lightning:input label="Colleage"></lightning:input>
+            <lightning:input label="City"></lightning:input>
+            <lightning:input label="Place"></lightning:input>
+            <lightning:button label="Previous" onclick="{!c.previous}"></lightning:button>
+            <lightning:button label="Next" onclick="{!c.next}"></lightning:button>
+        </lightning:tab>
+        <lightning:tab label="Exprience" id="3">
+            <lightning:input label="Company"></lightning:input>
+            <lightning:input label="exp"></lightning:input>
+            <lightning:input label="Salary"></lightning:input>
+            <lightning:input labe="technology"></lightning:input>
+            <lightning:button label="Previous" onclick="{!c.previous}"></lightning:button>
+             <lightning:button label="Next" onclick="{!c.next}"></lightning:button>
+        </lightning:tab>
+        <lightning:tab label="Completed" id="4">
+            	THANKS FOR YOU APPLICATION SUBMITED
+        APPLICATION IS SUCCESFULLY OF SUBMITED 
+                <lightning:button label="Submit" onclick="{!c.invoke}"></lightning:button>
+        </lightning:tab>
+    </lightning:tabSet>
+</aura:component>

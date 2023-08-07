@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" >
+	<aura:attribute name="myaccount" type="Object"></aura:attribute>
+    <aura:attribute name="newAcc" type="Object"></aura:attribute>
+    <force:recordData aura:id="record"
+                      targetFields="{!v.newAcc}"
+           			  fields="id, Name,Phoen,Rating,Industry"
+                      mode="EDIT"
+                      ></force:recordData>
+    <lightning:card title="New Account"  iconName="standard:account">
+    <lightning:input label="Name" aura:id="Name"></lightning:input>
+     <lightning:input label="Phone" aura:id="Phone"></lightning:input>
+     <lightning:input label="Industry" aura:id="Industry"></lightning:input>
+ 	<lightning:input label="Rating" aura:id="Rating"></lightning:input>
+        <lightning:button label="Submit"></lightning:button>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,42 @@
+<aura:component controller="Opptylist">
+    <aura:attribute name="myoppy" type="Opportunity[]"></aura:attribute> 
+    <aura:handler name="init" value="{!this}" action="{!c.call}"></aura:handler>
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead> 
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="Opportunity Id">Opportunity Id </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Opportunity Name" >Name</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="stageName">StageName</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="closeDate">CloseDate</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.myoppy}" var="x" >
+                <tr class="slds-hint-parent">
+                    <td data-label="opportunity id">
+                        <div class="slds-truncate" title="Opportunity id" >{!x.Id}</div>
+                    </td>
+                    <td data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Opportunity Name">{!x.Name}</div>
+                    </td>
+                    <td data-label="Opprtunity StageName" >
+                        <div class="slds-truncate" title="Opportunity StageName">{!x.StageName}</div>
+                    </td>
+                    <td data-label="Opportunity CloseDate" >
+                        <div class="slds-truncate" title="Opportunity CloseDate">{!x.CloseDate}</div>
+                    </td>
+                </tr>
+            </aura:iteration>
+            <td > 
+            </td>
+        </tbody>
+    </table>
+</aura:component>

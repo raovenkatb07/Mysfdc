@@ -1,0 +1,22 @@
+<aura:component>
+    <lightning:accordion activeSectionName="Basic Information" >
+        <lightning:accordionSection name="Basic information">
+            <lightning:input label="Enter the Name" aura:id="name"></lightning:input>
+            <lightning:input label="Enter the Phone" aura:id="Phone"></lightning:input>
+            <lightning:input label="enter the Email" aura:id="Email"></lightning:input>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="Colleage Information">
+            <lightning:input label="Colleage Name" aura:id="CName"></lightning:input>
+            <lightning:input label="Year" aura:id="year"></lightning:input>
+            <lightning:input label="Branch" aura:id="Branch"></lightning:input>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="Address information">
+                <lightning:input label="Enter the Steet" aura:id="steet"></lightning:input>
+                <lightning:input label="Enter the City" aurra:id="city"></lightning:input>
+                <lightning:input label="Enter the State" aura:id="State"></lightning:input>
+                <lightning:input label="Enter the pincode" aura:id="pincode"></lightning:input>
+        </lightning:accordionSection>
+         
+       
+    </lightning:accordion>
+</aura:component>

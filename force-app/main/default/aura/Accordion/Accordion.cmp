@@ -1,0 +1,19 @@
+<aura:component >
+    <lightning:accordion activeSectionName="Eduction" >
+        <lightning:accordionSection name="basicinformation" label="Customer basic info"  >
+            <lightning:input label="Firstname" aura:id="fname"></lightning:input>
+            <lightning:input label="Lastname" aura:id="lname"></lightning:input>
+            <lightning:input label="company" aura:id="company"></lightning:input>
+        </lightning:accordionSection>
+        <lightning:accordionSection name="Eduction" label="Strudent information" >
+            <lightning:input label="StudentName" aura:id="Sname"></lightning:input>
+            <lightning:input label="StudentNo" aura:id="Sid"></lightning:input>
+            <lightning:input label="Student Branch" aura:id="Sbranch"></lightning:input>
+        </lightning:accordionSection>
+        <lightning:accordionSection label="Communication" name="community"  >
+        <lightning:input label="phone" aura:id="phone"></lightning:input>
+            <lightning:input label="email" aura:id="email"></lightning:input>
+            <lightning:input label="mobile" aura:id="mobile"></lightning:input>
+        </lightning:accordionSection>
+    </lightning:accordion>
+</aura:component>

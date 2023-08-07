@@ -1,0 +1,35 @@
+<aura:component >
+    <aura:attribute name="aval" type="Decimal"></aura:attribute>
+    <aura:attribute name="bval" type="Decimal"></aura:attribute>
+    <aura:attribute name="Result" type="Decimal"></aura:attribute>
+    <lightning:input label="Enter A value" type="number" value="{!v.aval}"></lightning:input>
+    <lightning:input label="Enter B value" type="number" value="{!v.bval}"></lightning:input>
+	<lightning:button label="ADD" onclick="{!c.add}"></lightning:button>
+	<lightning:button label="SUb" onclick="{!c.sub}"></lightning:button>  
+    <lightning:button label="MUL" onclick="{!c.mul}"></lightning:button>
+    <lightning:button label="DIV" onclick="{!c.div}"></lightning:button>
+    <lightning:button label="Cancel" onclick="{!c.cancel}"></lightning:button>
+    <div>
+        A values == {!v.aval}<br/>
+        B values=== {!v.bval}<br/>
+        Result::----{!v.Result}
+    
+    </div>
+    
+ <!--   <aura:attribute name="amount" type="Decimal"></aura:attribute>
+    <aura:attribute name="year" type="Decimal"></aura:attribute>
+    <aura:attribute name="rate" type="decimal"></aura:attribute>
+    <aura:attribute name="intrest" type="Decimal"></aura:attribute>
+    
+    <lightning:input type="number" label="Enter your Amount" value="{!v.amount}" ></lightning:input>
+    <lightning:input type="number" label="Enter your years" value="{!v.year}"></lightning:input>
+    <lightning:input type="number" label="Enter your rate" value="{!v.rate}"></lightning:input>
+    <lightning:button label="Submit" onclick="{!c.calculate}"></lightning:button>
+    <div>
+        AMOUNT::{!v.amount}<br/>
+        RATE:	{!v.rate}<br/>
+        YEAR	:{!v.year}<br/>
+        intrest :{!v.intrest}
+    
+    </div> -->
+</aura:component>

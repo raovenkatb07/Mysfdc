@@ -1,0 +1,5 @@
+<aura:component controller="Aura_example_1">
+    <aura:attribute name="Result" type="String"></aura:attribute>
+    <lightning:button label="Submit" onclick="{!c.showcall}"></lightning:button>
+    DisPlay the Name::{!v.Result}
+</aura:component>

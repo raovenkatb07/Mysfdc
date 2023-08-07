@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="empName" type="String"></aura:attribute>
+    <aura:attribute name="age" type="Integer"></aura:attribute>
+    <aura:attribute name="city" type="String"></aura:attribute>
+	<div>
+        Iam Venaktarao<br/>
+        Iam stady ing MCA<br/>
+        my village name is HYdarabad
+    </div>
+    Name=	{!v.empName}<br/>
+    Age==	{!v.age}<br/>
+    City=={!v.city}
+</aura:component>

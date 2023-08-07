@@ -1,0 +1,10 @@
+<aura:component>
+    <aura:attribute name="FirstName" type="String"></aura:attribute>
+    <aura:attribute name="LastName" type="String"></aura:attribute>
+    <aura:attribute name="Phone" type="String"></aura:attribute>
+    <aura:handler name="SecName" event="c:SecondEvent" action="{!c.invoke}"></aura:handler>
+    <c:SecondChild></c:SecondChild><br/>
+        FirstName::{!v.FirstName}<br/>
+        LastName::{!v.LastName}<br/>
+        Phone:::  {!v.Phone} 
+</aura:component>

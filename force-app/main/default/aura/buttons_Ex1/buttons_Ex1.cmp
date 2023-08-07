@@ -1,0 +1,18 @@
+<aura:component >
+    <aura:attribute name="EmpName" type="String"></aura:attribute>
+    <aura:attribute name="Salary" type="String"></aura:attribute>
+    <aura:attribute name="Address" type="String"></aura:attribute>
+    <aura:attribute name="Firstname" type="String"></aura:attribute>
+    <aura:attribute name="Lastname" type="String"></aura:attribute>
+    <div>
+        Emap Name	:{!v.EmpName}<br/>
+        Salary		:{!v.Salary}<br/>
+        Address 	:{!v.Address}<br/>
+        Firsrname	:{!v.Firstname}<br/>
+        Lastname	:{!v.Lastname}<br/>
+        <lightning:button label="DISPLAY" onclick="{!c.show}"></lightning:button>
+        <lightning:button label="Cancel" onclick="{!c.cancel}"></lightning:button>
+        
+    </div>
+    
+</aura:component>

@@ -1,0 +1,13 @@
+<aura:component >
+	<aura:attribute name="empName" type="string"></aura:attribute>
+    <aura:attribute name="age" type="integer"  required="true"></aura:attribute>
+    <aura:attribute name="Salary" type="decimal" default="10000"></aura:attribute>
+    <aura:attribute name="city" type="String" description="My ciy"></aura:attribute>
+    
+    Display the information<br/>
+    Name::{!v.empName}<br/>
+    Age ::{!v.age}<br/>
+    Salary:{!v.Salary}<br/>
+    City::{!v.city}
+    
+</aura:component>

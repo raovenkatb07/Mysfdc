@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForRecordHome,lightning:actionOverride,force:hasRecordId" access="global" controller="Contact_Create_1" >
+    <lightning:card iconName="standard:contact" title="New Contact" >
+        <lightning:input label="LastName" aura:id="lname"></lightning:input>
+        <lightning:input label="FirstName" aura:id="fname"></lightning:input>
+        <lightning:input label="Phone" aura:id="phone"></lightning:input>
+        <lightning:input label="Fax" aura:id="fax"></lightning:input>
+        <lightning:input label="Email" aura:id="email"></lightning:input>
+        <aura:set attribute="actions">
+        <lightning:buttonGroup>
+            <lightning:button label="Save" onclick="{!c.save}"></lightning:button>
+            <lightning:button label="Cancel" onclick="{!c.cancel}"></lightning:button>
+            </lightning:buttonGroup>
+        </aura:set>
+    </lightning:card>
+</aura:component>

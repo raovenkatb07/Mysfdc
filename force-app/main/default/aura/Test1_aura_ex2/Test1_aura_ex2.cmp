@@ -1,0 +1,6 @@
+<aura:component>
+<lightning:card title="Venkatara" iconName="standard:account" >
+    <lightning:button variant="brand" label="Click her"  onclick="{!c.call}"></lightning:button>
+</lightning:card>
+
+</aura:component>

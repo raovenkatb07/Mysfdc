@@ -1,0 +1,6 @@
+<aura:component>
+<aura:attribute name="EmpName" type="String"></aura:attribute>
+<aura:handler event="c:AppEvent" action="{!c.invoke}"></aura:handler>
+<c:ChildOne></c:ChildOne>
+EmpName::{!v.EmpName}
+</aura:component>

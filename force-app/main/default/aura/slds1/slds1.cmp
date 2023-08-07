@@ -1,0 +1,35 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+<aura:attribute name="recordId" type="String"></aura:attribute>
+<aura:attribute name="targetrec" type="Object"></aura:attribute>
+<aura:attribute name="AccRecord" type="Object"></aura:attribute>
+<aura:attribute name="Error" type="String"></aura:attribute>
+<force:recordData aura:id="recid"
+            recordId="{!v.recordId}"
+            layoutType="FULL"
+            fields="Name,Phone,Industry"
+            targetRecord="{!v.targetrec}"
+            targetFields="{!v.AccRecord}"
+            targetError="{!v.Error}"
+            ></force:recordData>
+<lightning:card iconName="Standard:account" title="{!v.AccRecord.Name}">
+    <div class="slds-p-horizontal_small">
+        <p class="slds-p-horizontal_small">
+            <lightning:input label="Account Name" value="{!v.AccRecord.Name}"></lightning:input>
+        </p>
+        <p class="slds-p-horizontal_small">
+            <lightning:input label="Account Phone" value="{!v.AccRecord.Phone}"></lightning:input>
+        </p>
+        <p class="slds-p-horizontal_small">
+            <lightning:input label="Account Industty" value="{!v.AccRecord.Industry}"></lightning:input>
+        </p>
+    </div>
+    <div class="slds-p-horizontal_small">
+        <lightning:button label="Save" onclick="{!c.invoke}" />
+        </div>
+</lightning:card>
+<aura:if isTrue="{!not(empty(v.error))}" >
+    <div >
+        <p class="slds-p-horizontal_small">{!v.error}</p>
+    </div>
+</aura:if>
+</aura:component>
