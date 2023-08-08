@@ -6,6 +6,9 @@ Global class BatchStatefull implements Database.Batchable<sObject>,Database.Stat
     }
     Global void execute(database.BatchableContext  bc,list<Account> acc){
         for(Account a:acc){
+            a.name='test Account Name';
+            a.phone='7474747474';
+            a.billingcity='Hyderabad';
             a.amount__c=count;
             count+=1;
         }
