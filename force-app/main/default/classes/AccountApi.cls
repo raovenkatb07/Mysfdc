@@ -60,7 +60,7 @@ global class AccountApi {
     
 
 }
-/*Auth Provider
+/*ORg TWo COde implements like as the Apex class and Vf page.
 
 public with sharing class TargetorgApex {
     public string accName{get;set;}
