@@ -209,3 +209,115 @@ public with sharing class TargetorgApex {
         
     </apex:form>
 </apex:page>  */
+
+
+/*
+NOTE::--->> Below of the Code Second Model.This is generate the accesstoken used to the username & password ,ClientSecret & ClientId 
+Please refer to below the code 
+public class oAuthUserName_password {
+    public string myresult {Set;get;}
+    public String accesstoken {Set;get;}
+    public String searchAccount {Set;get;}
+    public String FinalResult {Set;get;}
+    public String Saverecord{Set;get;}
+    public void gettoken(){
+        /* String endpoint='https://login.salesforce.com/services/oauth2/token';
+integration__c sf=[select ClientId__c,ClientSecret__c,password__c,username__c	 from integration__c limit 1];
+String body='grant_type=password';
+body=body+'&client_id='+sf.ClientId__c;
+body=body+'&client_secret='+sf.ClientSecret__c;
+body=body+'&username='+sf.username__c;
+body=body+'&password'+sf.password__c;
+http p=new http();
+httprequest request=new Httprequest();
+request.setendPoint(endpoint);
+request.setMethod('POST');
+request.setBody(Body);
+Httpresponse response=p.send(request);
+result=response.getBody();*/
+         
+        /*
+        String cliedId='3MVG9fe4g9fhX0E6pwCvWRcyRRXOMiGDqq0u4qqDsLpiJNzR7gvJMNJaB8n.LBqOiqKmX9rmTe1gy.fc1cFg.';
+        String client_secret='1E1B2685B2F38FEF6CA7ED0A676737E69FB59760584DE0B1235C9B7B9512E147';
+        String username='raosfdc@sfdc.com';
+        String password='sfdc@1234';
+        String Endpoint='https://login.salesforce.com/services/oauth2/token';
+        String result='grant_type=password';
+        result=result+'&client_id='+cliedId;
+        result=result+'&client_secret='+client_secret;
+        result=result+'&username='+username;
+        result=result+'&password='+password;
+        http p=new http();
+        httprequest request=new Httprequest();
+        request.setendPoint(Endpoint);
+        request.setMethod('POST');
+        request.setBody(result);
+        Httpresponse response=p.send(request);
+        if (response.getStatusCode() == 200) {
+            String responseBody = response.getBody();
+            System.debug('responseBody===='+response.getStatusCode());
+            myresult=response.getBody();
+            System.debug('myresult ===='+myresult);
+            System.JSONParser parser=JSON.createParser(myresult);
+            while(parser.nextToken()!=null){
+                if(parser.getText()=='access_token'){
+                    accesstoken=parser.getText();
+                }
+            }
+            callService();
+        }
+
+    }
+    public void callService(){
+        //String endpoint='callout:Salesforce_Org/services/apexrest/Account/'+searchAccount;
+        Http p=new Http();
+        Httprequest request=new HttpRequest();
+        request.setEndpoint('callout:Salesforce_Org/services/apexrest/Account/ '+searchAccount);
+        request.setMethod('GET');
+        request.setHeader('Authorization','OAuth'+accesstoken);
+        Httpresponse response=p.send(request);
+        FinalResult=response.getBody();
+    }
+    
+   /* public void saverecord(){
+        Http p=new http();
+        httpRequest request=new HttpRequest();
+        request.setEndpoint('callout:Salesforce_Org/services/apexrest/Account');
+        request.setMethod('POST');
+        request.setHeader('Authorization','OAuth'+accesstoken);
+        Httpresponse response =p.send(request);
+        Saverecord =response.getBody();
+        System.debug('Saverecord==='+Saverecord);
+    }
+    */
+
+    /*<apex:page controller="oAuthUserName_password">
+    <apex:form >
+        <apex:pageBlock title="Get the Token">
+            <apex:commandButton value="Token" action="{!gettoken}" />
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Token Genearate"></apex:outputText>
+                    <apex:outputText value="{!myresult}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+       <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+               <apex:outputText value="Enter the Account Name" ></apex:outputText>
+            <apex:inputText value="{!searchAccount}" />
+           </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+          <apex:outputText value="Final Result"></apex:outputText>
+       	<apex:outputText value="{!FinalResult}" ></apex:outputText>
+     
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>
+*/
+
+
+ 
+
+
+
